@@ -295,7 +295,7 @@ CHN,security,0,missing
 CHN,finance,7,present
 CHN,critical_infra,7,present
 CHN,energy,4,present
-CHN,none,42,present
+CHN,none,43,present
 CIV,media,0,missing
 CIV,tech_platform,0,missing
 CIV,telecom,0,missing
@@ -403,7 +403,7 @@ DEU,security,0,missing
 DEU,finance,3,present
 DEU,critical_infra,1,present
 DEU,energy,0,missing
-DEU,none,96,present
+DEU,none,93,present
 DJI,media,0,missing
 DJI,tech_platform,2,present
 DJI,telecom,0,missing
@@ -484,7 +484,7 @@ ESP,security,0,missing
 ESP,finance,0,missing
 ESP,critical_infra,0,missing
 ESP,energy,0,missing
-ESP,none,61,present
+ESP,none,60,present
 EST,media,0,missing
 EST,tech_platform,5,present
 EST,telecom,0,missing
@@ -522,14 +522,14 @@ FJI,critical_infra,0,missing
 FJI,energy,0,missing
 FJI,none,17,present
 FRA,media,0,missing
-FRA,tech_platform,7,present
+FRA,tech_platform,6,present
 FRA,telecom,0,missing
 FRA,defense,0,missing
 FRA,security,0,missing
 FRA,finance,0,missing
 FRA,critical_infra,0,missing
 FRA,energy,1,present
-FRA,none,75,present
+FRA,none,74,present
 FSM,media,0,missing
 FSM,tech_platform,0,missing
 FSM,telecom,0,missing
@@ -556,7 +556,7 @@ GBR,security,0,missing
 GBR,finance,1,present
 GBR,critical_infra,1,present
 GBR,energy,1,present
-GBR,none,42,present
+GBR,none,46,present
 GEO,media,0,missing
 GEO,tech_platform,0,missing
 GEO,telecom,0,missing
@@ -844,7 +844,7 @@ KOR,security,0,missing
 KOR,finance,0,missing
 KOR,critical_infra,0,missing
 KOR,energy,0,missing
-KOR,none,44,present
+KOR,none,45,present
 KWT,media,0,missing
 KWT,tech_platform,0,missing
 KWT,telecom,0,missing
@@ -1152,7 +1152,7 @@ NIC,critical_infra,0,missing
 NIC,energy,0,missing
 NIC,none,19,present
 NLD,media,0,missing
-NLD,tech_platform,5,present
+NLD,tech_platform,4,present
 NLD,telecom,0,missing
 NLD,defense,0,missing
 NLD,security,0,missing
@@ -1645,7 +1645,7 @@ USA,security,0,missing
 USA,finance,16,present
 USA,critical_infra,4,present
 USA,energy,7,present
-USA,none,185,present
+USA,none,180,present
 UZB,media,0,missing
 UZB,tech_platform,1,present
 UZB,telecom,0,missing

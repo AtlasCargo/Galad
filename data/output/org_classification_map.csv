@@ -14,7 +14,6 @@ wiki:largest_us_companies_by_revenue:cigna,Cigna,USA,,,
 wiki:largest_us_companies_by_revenue:microsoft,Microsoft,USA,,,
 wiki:largest_france_companies:totalenergies,TotalEnergies,,,,
 wiki:largest_us_companies_by_revenue:cardinal-health,Cardinal Health,USA,,,
-wiki:largest_uk_companies:bp,BP,,,,
 wiki:largest_us_companies_by_revenue:chevron,Chevron,USA,,,
 wiki:largest_us_companies_by_revenue:bank-of-america,Bank of America,USA,,,finance
 wiki:largest_us_companies_by_revenue:general-motors,General Motors,USA,,,
@@ -30,7 +29,6 @@ wiki:largest_us_companies_by_revenue:kroger,Kroger,USA,,,
 wiki:largest_us_companies_by_revenue:phillips-66,Phillips 66,USA,,,
 wiki:largest_italy_companies:eni,Eni,,,,
 wiki:largest_us_companies_by_revenue:marathon-petroleum,Marathon Petroleum,USA,,,energy
-wiki:largest_uk_companies:hsbc,HSBC,,,,
 wiki:largest_us_companies_by_revenue:verizon-communications,Verizon Communications,USA,,,
 wiki:largest_us_companies_by_revenue:nvidia,Nvidia,USA,,,
 wiki:largest_us_companies_by_revenue:goldman-sachs-group,Goldman Sachs Group,USA,,,
@@ -55,16 +53,13 @@ wiki:largest_us_companies_by_revenue:united-parcel-service,United Parcel Service
 wiki:largest_us_companies_by_revenue:johnson-and-johnson,Johnson & Johnson,USA,,,
 wiki:largest_france_companies:lvmh,LVMH,,,,
 wiki:largest_us_companies_by_revenue:fedex,FedEx,USA,,,
-wiki:largest_uk_companies:tesco,Tesco,,,,
 wiki:largest_canada_companies:brookfield-corporation,Brookfield Corporation,,,,
 wiki:largest_italy_companies:assicurazioni-generali,Assicurazioni Generali,,,,
 wiki:largest_us_companies_by_revenue:archer-daniels-midland,Archer Daniels Midland,USA,,,
 wiki:largest_spain_companies:repsol,Repsol,,,,
 wiki:largest_us_companies_by_revenue:procter-and-gamble,Procter & Gamble,USA,,,
-wiki:largest_us_companies_by_revenue:lowe-s,Lowe's,USA,,,
 wiki:largest_us_companies_by_revenue:energy-transfer-partners,Energy Transfer Partners,USA,,,energy
 wiki:largest_us_companies_by_revenue:rtx,RTX,USA,,,
-wiki:largest_us_companies_by_revenue:albertsons,Albertsons,USA,,,
 wiki:largest_us_companies_by_revenue:sysco,Sysco,USA,,,
 wiki:largest_us_companies_by_revenue:progressive,Progressive,USA,,,
 wiki:largest_us_companies_by_revenue:american-express,American Express,USA,,,media
@@ -100,7 +95,6 @@ wiki:largest_brazil_companies:banco-do-brasil,Banco do Brasil,,,,
 wiki:largest_us_companies_by_revenue:charter-communications,Charter Communications,USA,,,
 wiki:largest_us_companies_by_revenue:performance-food-group,Performance Food Group,USA,,,
 wiki:largest_us_companies_by_revenue:american-airlines-group,American Airlines Group,USA,,,tech_platform
-wiki:largest_uk_companies:rio-tinto,Rio Tinto,,,,
 wiki:largest_us_companies_by_revenue:capital-one-financial,Capital One Financial,USA,,,finance
 wiki:largest_australia_companies:bhp,BHP,,,,
 wiki:largest_us_companies_by_revenue:cisco-systems,Cisco Systems,USA,,,
@@ -127,7 +121,6 @@ wiki:largest_us_companies_by_revenue:coca-cola,Coca-Cola,USA,,,
 wiki:largest_us_companies_by_revenue:tiaa,TIAA,USA,,,
 wiki:largest_australia_companies:anz-bank,ANZ Bank,,,,finance
 wiki:largest_us_companies_by_revenue:travelers,Travelers,USA,,,
-wiki:largest_uk_companies:astrazeneca,AstraZeneca,,,,
 wiki:largest_us_companies_by_revenue:eli-lilly,Eli Lilly,USA,,,
 wiki:largest_spain_companies:telef-nica,Telefónica,,,,
 wiki:largest_brazil_companies:vale,Vale,,,,
@@ -174,7 +167,6 @@ wiki:largest_asia_companies:trafigura,Trafigura,SGP,,,
 wiki:largest_companies_by_revenue:mckesson,McKesson,USA,,,
 wiki:largest_companies_by_revenue:agricultural-bank-of-china,Agricultural Bank of China,CHN,,,finance
 wiki:largest_asia_companies:ping-an-insurance,Ping An Insurance,CHN,,,finance
-wiki:largest_companies_by_revenue:schwarz-gruppe,Schwarz Gruppe,DEU,,,
 wiki:largest_companies_by_revenue:china-railway-engineering-corporation,China Railway Engineering Corporation,CHN,,,"tech_platform,critical_infra"
 wiki:largest_companies_by_revenue:bank-of-china,Bank of China,CHN,,,finance
 wiki:largest_companies_by_revenue:bmw-group,BMW Group,DEU,,,
@@ -182,16 +174,22 @@ wiki:largest_asia_companies:china-national-offshore-oil-corporation,China Nation
 wiki:largest_asia_companies:china-railway-construction-corporation,China Railway Construction Corporation,CHN,,,"tech_platform,critical_infra"
 wiki:largest_asia_companies:baowu,Baowu,CHN,,,
 wiki:largest_asia_companies:mitsubishi-group,Mitsubishi Group,JPN,,,
-wiki:largest_asia_companies:jd-com,JD.com,CHN,,,
 wiki:largest_asia_companies:china-life-insurance-company,China Life Insurance Company,CHN,,,finance
 wiki:largest_asia_companies:china-mobile,China Mobile,CHN,,,telecom
 wiki:largest_asia_companies:alibaba-group,Alibaba Group,CHN,,,
 wiki:largest_asia_companies:xiamen-c-and-d,Xiamen C & D,CHN,,,
-wiki:largest_asia_companies:honda-motor,Honda Motor,JPN,,,
 wiki:largest_asia_companies:shandong-energy,Shandong Energy,CHN,,,energy
-wiki:largest_asia_companies:china-resources,China Resources,CHN,,,
+wiki:largest_asia_companies:honda-motor,Honda Motor,JPN,,,
 wiki:largest_asia_companies:china-energy-investment,China Energy Investment,CHN,,,energy
+wiki:largest_asia_companies:china-resources,China Resources,CHN,,,
 wiki:largest_asia_companies:china-southern-power-grid,China Southern Power Grid,CHN,,,critical_infra
+wiki:largest_technology_companies_by_revenue:meta,Meta,,,,
+wiki:largest_technology_companies_by_revenue:jingdong,Jingdong,CHN,,,
+wiki:largest_technology_companies_by_revenue:alibaba,Alibaba,,,,
+wiki:largest_technology_companies_by_revenue:tencent,Tencent,CHN,,,
+wiki:largest_technology_companies_by_revenue:tsmc,TSMC,TWN,,,
+wiki:largest_technology_companies_by_revenue:lg-electronics,LG Electronics,KOR,,,
+wiki:largest_technology_companies_by_revenue:cisco,Cisco,,,,
 wd:Q20718,Samsung Electronics,KOR,,,
 wd:Q4201636,Perusahaan Listrik Negara,IDN,,,
 wd:Q623042,Bank Rakyat Indonesia,IDN,,,finance
@@ -243,6 +241,7 @@ wd:Q1684639,Perekryostok,RUS,,,
 wiki:largest_europe_companies_by_revenue:glencore,Glencore,CHE,,,
 wiki:forbes_global_2000:citigroup,Citigroup,USA,,,
 wd:Q154037,TotalEnergies,FRA,,,
+wiki:largest_europe_companies_by_revenue:bp,BP,GBR,,,
 wd:Q20716,Samsung Group,KOR,,,
 wiki:largest_europe_companies_by_revenue:stellantis,Stellantis,NLD,,,
 wiki:forbes_global_2000:industrial-and-commercial-bank-of-china,Industrial and Commercial Bank of China,,,,finance
@@ -254,6 +253,7 @@ wiki:forbes_global_2000:china-construction-bank,China Construction Bank,,,,finan
 wd:Q4154231,Far Eastern Shipping Company,RUS,,,
 wiki:largest_manufacturing_companies_by_revenue:foxconn,Foxconn,TWN,,,
 wiki:largest_private_companies_by_revenue:schwarz-group,Schwarz Group,DEU,,,
+wiki:largest_retail_companies:schwarz-gruppe,Schwarz Gruppe,,,,
 wiki:fortune_500:ford-motor-company,Ford Motor Company,,,,
 wiki:largest_manufacturing_companies_by_revenue:mercedes-benz-group,Mercedes-Benz Group,DEU,,,
 wiki:largest_germany_companies:bmw,BMW,,,,
@@ -262,23 +262,27 @@ wiki:largest_germany_companies:mercedes-benz-group-ag,Mercedes-Benz Group AG,,,,
 wd:Q4481674,Federal Passenger Company,RUS,,,
 wd:Q16643324,Detskiy Mir,RUS,,,
 wiki:largest_private_companies_by_revenue:cargill,Cargill,USA,,,
+wiki:largest_retail_companies:the-home-depot,The Home Depot,,,,
 wiki:largest_europe_companies_by_revenue:lectricit-de-france,Électricité de France,FRA,,,
+wiki:largest_retail_companies:the-kroger-company,The Kroger Company,,,,
 wiki:largest_japan_companies:honda,Honda,,,,
 wiki:largest_manufacturing_companies_by_revenue:china-railway-and-engineering-group,China Railway and Engineering Group,CHN,,,"tech_platform,critical_infra"
 wd:Q51756,China Airlines,TWN,,,tech_platform
 wiki:largest_europe_companies_by_revenue:banco-santander,Banco Santander,ESP,,,
 wd:Q51747,Air China,CHN,,,tech_platform
 wiki:largest_europe_companies_by_revenue:bnp-paribas,BNP Paribas,FRA,,,
+wiki:largest_europe_companies_by_revenue:hsbc,HSBC,GBR,,,
 wd:Q467752,Verizon Communications,USA,,,
 wiki:largest_japan_companies:mitsubishi-corporation,Mitsubishi Corporation,,,,
 wiki:largest_manufacturing_companies_by_revenue:huawei,Huawei,CHN,,,
 wiki:largest_manufacturing_companies_by_revenue:ford,Ford,USA,,,
 wiki:largest_private_companies_by_revenue:koch-inc,"Koch, Inc.",USA,,,
+wiki:largest_retail_companies:aldi,Aldi,,,,
 wiki:largest_germany_companies:deutsche-telekom-ag,Deutsche Telekom AG,,,,
+wiki:largest_retail_companies:jd-com,JD.com,,,,
 wd:Q487292,Allianz SE,DEU,,,
 wiki:largest_manufacturing_companies_by_revenue:mitsubishi,Mitsubishi,JPN,,,
 wiki:largest_europe_companies_by_revenue:deutsche-telekom,Deutsche Telekom,DEU,,,
-wiki:largest_private_companies_by_revenue:aldi,Aldi,DEU,,,
 wd:Q740844,Q740844,RUS,,,
 wiki:largest_europe_companies_by_revenue:uniper,Uniper,DEU,,,
 wd:Q7570642,Southern and Eastern Norway Regional Health Authority,NOR,,,
@@ -290,6 +294,7 @@ wiki:largest_india_companies:reliance-industries-limited,Reliance Industries Lim
 wiki:largest_manufacturing_companies_by_revenue:saic-motor,SAIC Motor,CHN,,,tech_platform
 wiki:largest_europe_companies_by_revenue:rosneft,Rosneft,RUS,,,
 wiki:largest_europe_companies_by_revenue:equinor,Equinor,NOR,,,
+wiki:largest_retail_companies:target-corporation,Target Corporation,,,,
 wiki:largest_europe_companies_by_revenue:nestl,Nestlé,CHE,,,
 wiki:largest_private_companies_by_revenue:e-leclerc,E.Leclerc,FRA,,,
 wiki:largest_private_companies_by_revenue:suning-holdings-group,Suning Holdings Group,CHN,,,
@@ -301,8 +306,8 @@ wiki:largest_private_companies_by_revenue:rewe-group,REWE Group,DEU,,,
 wiki:largest_europe_companies_by_revenue:socgen,SocGen,FRA,,,
 wiki:largest_private_companies_by_revenue:robert-bosch,Robert Bosch,DEU,,,
 wiki:largest_india_companies:life-insurance-corporation,Life Insurance Corporation,,,,finance
+wiki:largest_retail_companies:ahold-delhaize,Ahold Delhaize,,,,tech_platform
 wiki:largest_manufacturing_companies_by_revenue:china-baowu-steel-group,China Baowu Steel Group,CHN,,,
-wiki:largest_europe_companies_by_revenue:ahold-delhaize,Ahold Delhaize,NLD,,,tech_platform
 wiki:largest_japan_companies:itochu-corporation,Itochu Corporation,,,,
 wiki:largest_japan_companies:eneos,ENEOS,,,,
 wiki:largest_manufacturing_companies_by_revenue:dell,Dell,USA,,,
@@ -311,7 +316,7 @@ wiki:largest_india_companies:indian-oil-corporation,Indian Oil Corporation,,,,en
 wd:Q459477,FedEx,USA,,,
 wiki:largest_europe_companies_by_revenue:cr-dit-agricole,Crédit Agricole,FRA,,,
 wiki:largest_europe_companies_by_revenue:dior,Dior,FRA,,,
-wiki:largest_europe_companies_by_revenue:carrefour,Carrefour,FRA,,,
+wiki:largest_retail_companies:carrefour,Carrefour,,,,
 wiki:largest_europe_companies_by_revenue:bosch,Bosch,DEU,,,
 wiki:largest_manufacturing_companies_by_revenue:nestle,Nestle,,,,
 wiki:largest_europe_companies_by_revenue:engie,Engie,FRA,,,
@@ -322,6 +327,8 @@ wiki:largest_manufacturing_companies_by_revenue:hyundai-motor-company,Hyundai Mo
 wiki:largest_manufacturing_companies_by_revenue:dongfeng-motor-group,Dongfeng Motor Group,CHN,,,
 wd:Q869570,Mediterranean Shipping Company,CHE,,,
 wiki:largest_europe_companies_by_revenue:dhl,DHL,DEU,,,
+wiki:largest_retail_companies:lowe-s,Lowe's,,,,
+wiki:largest_europe_companies_by_revenue:tesco,Tesco,GBR,,,
 wiki:largest_private_companies_by_revenue:bytedance,ByteDance,CHN,,,
 wiki:largest_manufacturing_companies_by_revenue:sony,Sony,JPN,,,
 wiki:largest_europe_companies_by_revenue:siemens,Siemens,DEU,,,
@@ -329,10 +336,12 @@ wiki:largest_manufacturing_companies_by_revenue:hitachi,Hitachi,JPN,,,
 wiki:largest_private_companies_by_revenue:state-farm,State Farm,USA,,,
 wd:Q3511885,T-Mobile US,USA,,,telecom
 wiki:largest_manufacturing_companies_by_revenue:general-electric,General Electric,USA,,,energy
+wiki:largest_retail_companies:albertsons,Albertsons,,,,
 wiki:largest_manufacturing_companies_by_revenue:intel,Intel,USA,,,
 wiki:largest_india_companies:oil-and-natural-gas-corporation,Oil and Natural Gas Corporation,,,,energy
 wiki:largest_manufacturing_companies_by_revenue:sinopharm,Sinopharm,CHN,,,
 wiki:largest_private_companies_by_revenue:pacific-construction-group,Pacific Construction Group,CHN,,,
+wiki:largest_retail_companies:edeka,Edeka,,,,
 wiki:largest_europe_companies_by_revenue:vinci,Vinci,FRA,,,
 wd:Q7248721,Progressive Corporation,USA,,,
 wiki:largest_europe_companies_by_revenue:basf,BASF,DEU,,,
@@ -340,6 +349,7 @@ wiki:largest_manufacturing_companies_by_revenue:nissan,Nissan,JPN,,,
 wiki:largest_private_companies_by_revenue:nippon-life-insurance,Nippon Life Insurance,JPN,,,finance
 wiki:largest_europe_companies_by_revenue:groupe-bpce,Groupe BPCE,FRA,,,
 wiki:largest_manufacturing_companies_by_revenue:ibm,IBM,USA,,,
+wiki:largest_retail_companies:seven-and-i-holdings,Seven & I Holdings,,,,
 wiki:largest_manufacturing_companies_by_revenue:beijing-automotive-group,Beijing Automotive Group,CHN,,,
 wiki:largest_india_companies:state-bank-of-india,State Bank of India,,,,finance
 wiki:largest_europe_companies_by_revenue:ubs-group,UBS Group,CHE,,,
@@ -370,6 +380,8 @@ wiki:largest_manufacturing_companies_by_revenue:chemchina,ChemChina,CHN,,,
 wiki:largest_europe_companies_by_revenue:daimler-truck,Daimler Truck,DEU,,,tech_platform
 wiki:largest_europe_companies_by_revenue:ing,ING,NLD,,,
 wiki:largest_europe_companies_by_revenue:ab-inbev,AB InBev,BEL,,,
+wiki:largest_retail_companies:on,Æon,,,,
+wiki:largest_retail_companies:publix,Publix,,,,
 wiki:largest_manufacturing_companies_by_revenue:hewlett-packard,Hewlett-Packard,USA,,,
 wiki:largest_europe_companies_by_revenue:renault,Renault,FRA,,,
 wiki:largest_manufacturing_companies_by_revenue:raytheon-technologies,Raytheon Technologies,USA,,,
@@ -377,9 +389,10 @@ wiki:largest_private_companies_by_revenue:cma-cgm,CMA CGM,FRA,,,
 wd:Q1157624,Daimler Truck,DEU,,,tech_platform
 wiki:largest_private_companies_by_revenue:pwc,PwC,GBR,,,
 wiki:largest_private_companies_by_revenue:auchan-holding,Auchan Holding,FRA,,,
-wiki:largest_europe_companies_by_revenue:edeka,Edeka,DEU,,,
+wiki:largest_retail_companies:tjx-companies,TJX Companies,,,,
 wiki:largest_india_companies:bharat-petroleum,Bharat Petroleum,,,,energy
 wiki:largest_europe_companies_by_revenue:novartis,Novartis,CHE,,,
+wiki:largest_europe_companies_by_revenue:rio-tinto,Rio Tinto,GBR,,,
 wd:Q1437502,Iberdrola,ESP,,,
 wiki:largest_europe_companies_by_revenue:deutsche-bahn,Deutsche Bahn,DEU,,,
 wiki:largest_india_companies:tata-motors,Tata Motors,,,,
@@ -415,14 +428,19 @@ wiki:largest_europe_companies_by_revenue:talanx,Talanx,DEU,,,
 wd:Q3445478,MND,CZE,,,
 wd:Q806215,Santander Group,ESP,,,
 wd:Q499707,BNP Paribas,FRA,,,
+wiki:largest_europe_companies_by_revenue:astrazeneca,AstraZeneca,GBR,,,
 wiki:largest_private_companies_by_revenue:ikea,IKEA,SWE,,,
 wiki:largest_europe_companies_by_revenue:sncf,SNCF,FRA,,,
 wiki:largest_europe_companies_by_revenue:continental,Continental,DEU,,,
 wiki:largest_europe_companies_by_revenue:l-or-al,L'Oréal,FRA,,,
 wiki:largest_private_companies_by_revenue:nationwide,Nationwide,USA,,,
 wd:Q16742113,Kooperativa pojišťovna,CZE,,,
+wiki:largest_retail_companies:he-butt-grocery,HE Butt Grocery,,,,
+wiki:largest_retail_companies:best-buy,Best Buy,,,,
+wiki:largest_retail_companies:les-mousquetaires,Les Mousquetaires,,,,tech_platform
 wiki:largest_europe_companies_by_revenue:omv,OMV,AUT,,,
 wd:Q58206631,GECO,CZE,,,
+wiki:largest_retail_companies:woolworths-group,Woolworths Group,,,,
 wd:Q12017963,GECO CZ,CZE,,,
 wiki:largest_private_companies_by_revenue:cedar-holdings-group,Cedar Holdings Group,CHN,,,
 wiki:largest_europe_companies_by_revenue:sainsbury-s,Sainsbury's,GBR,,,tech_platform
@@ -435,6 +453,7 @@ wiki:largest_europe_companies_by_revenue:thyssenkrupp,ThyssenKrupp,DEU,,,
 wiki:largest_private_companies_by_revenue:edeka-zentrale,Edeka Zentrale,DEU,,,
 wiki:largest_private_companies_by_revenue:dz-bank,DZ Bank,DEU,,,finance
 wiki:largest_europe_companies_by_revenue:schneider-electric,Schneider Electric,FRA,,,energy
+wiki:largest_retail_companies:dollar-general,Dollar General,,,,
 wiki:largest_europe_companies_by_revenue:acs-group,ACS Group,ESP,,,
 wiki:largest_russia_companies:russian-railways,Russian Railways,,,,"tech_platform,critical_infra"
 wiki:largest_private_companies_by_revenue:kpmg,KPMG,GBR,,,
@@ -443,114 +462,175 @@ wd:Q11283119,Generali Česká pojišťovna,CZE,,,
 wd:Q9325,Lufthansa,DEU,,,
 wiki:largest_private_companies_by_revenue:meiji-yasuda-life-insurance,Meiji Yasuda Life Insurance,JPN,,,finance
 wiki:largest_private_companies_by_revenue:massachusetts-mutual-life-insurance-company,Massachusetts Mutual Life Insurance Company,USA,,,finance
-wiki:largest_private_companies_by_revenue:tech-data,Tech Data,USA,,,
 wiki:largest_private_companies_by_revenue:mars,Mars,USA,,,
+wiki:largest_private_companies_by_revenue:tech-data,Tech Data,USA,,,
+wiki:largest_retail_companies:coop,Coop,,,,
 wd:Q1541079,Komerční banka,CZE,,,finance
 wiki:largest_private_companies_by_revenue:jiangsu-shagang-group,Jiangsu Shagang Group,CHN,,,
-wiki:largest_private_companies_by_revenue:les-mousquetaires,Les Mousquetaires,FRA,,,tech_platform
+wiki:largest_retail_companies:mercadona,Mercadona,,,,
 wiki:largest_private_companies_by_revenue:yango-longking-group,Yango Longking Group,CHN,,,
 wd:Q340135,Československá obchodní banka,CZE,,,finance
+wiki:largest_retail_companies:auchan,Auchan,,,,
 wd:Q695087,"Mars, Incorporated",USA,,,
 wiki:largest_private_companies_by_revenue:reyes-holdings,Reyes Holdings,USA,,,
+wiki:largest_retail_companies:jer-nimo-martins,Jerónimo Martins,,,,
 wd:Q40993,Porsche,DEU,,,
+wiki:largest_retail_companies:asda,Asda,,,,
 wiki:largest_india_companies:rajesh-exports,Rajesh Exports,,,,critical_infra
 wd:Q44504,Inditex,ESP,,,
 wiki:largest_private_companies_by_revenue:northwestern-mutual,Northwestern Mutual,USA,,,
-wiki:largest_private_companies_by_revenue:sumitomo-life-insurance,Sumitomo Life Insurance,JPN,,,finance
 wiki:largest_private_companies_by_revenue:groupe-casino,Groupe Casino,FRA,,,
+wiki:largest_private_companies_by_revenue:sumitomo-life-insurance,Sumitomo Life Insurance,JPN,,,finance
+wiki:largest_retail_companies:groupe-adeo,Groupe ADEO,,,,
 wiki:largest_private_companies_by_revenue:wanda-group,Wanda Group,CHN,,,
 wiki:largest_private_companies_by_revenue:h-e-b,H-E-B,USA,,,
+wiki:largest_retail_companies:reliance-retail,Reliance Retail,,,,tech_platform
+wiki:largest_retail_companies:migros,Migros,,,,
+wiki:largest_retail_companies:shein,Shein,,,,
+wiki:largest_retail_companies:dollar-tree,Dollar Tree,,,,
 wiki:largest_private_companies_by_revenue:phoenix-pharma,Phoenix Pharma,DEU,,,
+wiki:largest_retail_companies:coop-rative-u,Coopérative U,,,,
 wd:Q5061531,Central Norway Regional Health Authority,NOR,,,
-wiki:largest_private_companies_by_revenue:taikang-insurance-group,Taikang Insurance Group,CHN,,,"tech_platform,finance"
 wiki:largest_private_companies_by_revenue:pilot-flying-j,Pilot Flying J,USA,,,
+wiki:largest_private_companies_by_revenue:taikang-insurance-group,Taikang Insurance Group,CHN,,,"tech_platform,finance"
 wiki:largest_private_companies_by_revenue:coop-group,Coop Group,CHE,,,
-wiki:largest_private_companies_by_revenue:asda,Asda,GBR,,,
 wiki:largest_india_companies:tata-consultancy-services,Tata Consultancy Services,,,,
+wiki:largest_retail_companies:coles-group,Coles Group,,,,
 wd:Q1477661,PACCAR,USA,,,
 wiki:largest_private_companies_by_revenue:xinjiang-guanghui-industry-investment-group,Xinjiang Guanghui Industry Investment Group,CHN,,,
 wiki:largest_india_companies:icici-bank,ICICI Bank,,,,finance
-wiki:largest_private_companies_by_revenue:migros-group,Migros Group,CHE,,,
 wiki:largest_private_companies_by_revenue:gs-caltex,GS Caltex,KOR,,,
+wiki:largest_private_companies_by_revenue:migros-group,Migros Group,CHE,,,
 wiki:largest_private_companies_by_revenue:huaxia-life-insurance,Huaxia Life Insurance,CHN,,,finance
 wiki:largest_india_companies:tata-steel,Tata Steel,,,,
 wiki:largest_private_companies_by_revenue:eg-group,EG Group,GBR,,,
-wiki:largest_private_companies_by_revenue:mercadona,Mercadona,ESP,,,
 wiki:largest_private_companies_by_revenue:achmea,Achmea,NLD,,,
 wiki:largest_russia_companies:rostec,Rostec,,,,
 wiki:largest_private_companies_by_revenue:hailiang-group,Hailiang Group,CHN,,,tech_platform
+wiki:largest_retail_companies:femsa,FEMSA,,,,
 wiki:largest_india_companies:larsen-and-toubro,Larsen & Toubro,,,,
 wiki:largest_india_companies:hindalco-industries,Hindalco Industries,,,,
+wiki:largest_retail_companies:cp-all,CP All,,,,
+wiki:largest_retail_companies:essilorluxottica,EssilorLuxottica,,,,
 wd:Q267122,BNSF Railway,USA,,,"tech_platform,critical_infra"
 wiki:largest_private_companies_by_revenue:cands-wholesale-grocers,C&S Wholesale Grocers,USA,,,
 wd:Q3374840,D/S Norden,DNK,,,
 wiki:largest_private_companies_by_revenue:heraeus,Heraeus,DEU,,,
+wiki:largest_retail_companies:alibaba-group-new-retail-and-direct-sales,Alibaba Group New Retail & Direct Sales,,,,tech_platform
+wiki:largest_retail_companies:metro-ag,Metro AG,,,,
 wd:Q503308,Southwest Airlines,USA,,,tech_platform
 wiki:largest_private_companies_by_revenue:massachusetts-mutual-life-insurance,Massachusetts Mutual Life Insurance,USA,,,finance
+wiki:largest_retail_companies:ceconomy,Ceconomy,,,,
+wiki:largest_retail_companies:as-watson-group,AS Watson Group,,,,
+wiki:largest_retail_companies:macy-s,Macy’s,,,,
 wiki:largest_russia_companies:vtb-bank,VTB Bank,,,,finance
+wiki:largest_retail_companies:handm,H&M,,,,
 wiki:largest_private_companies_by_revenue:enterprise-holdings,Enterprise Holdings,USA,,,
 wd:Q785943,Staples Inc.,USA,,,
+wiki:largest_retail_companies:empire-company,Empire Company,,,,
+wiki:largest_retail_companies:nike-direct,Nike Direct,,,,
 wd:Q12022071,Iveco Czech Republic,CZE,,,
+wiki:largest_retail_companies:wesfarmers,Wesfarmers,,,,
 wiki:largest_russia_companies:x5-group,X5 Group,,,,
+wiki:largest_retail_companies:meijer,Meijer,,,,
 wiki:largest_private_companies_by_revenue:bechtel,Bechtel,USA,,,
 wiki:largest_private_companies_by_revenue:boehringer-ingelheim,Boehringer Ingelheim,DEU,,,
+wiki:largest_retail_companies:coupang,Coupang,,,,
 wiki:largest_india_companies:ntpc-limited,NTPC Limited,,,,
-wiki:largest_private_companies_by_revenue:greenergy,Greenergy,GBR,,,energy
 wiki:largest_india_companies:jsw-steel-ltd,JSW Steel Ltd,,,,
 wiki:largest_private_companies_by_revenue:cox-enterprises,Cox Enterprises,USA,,,
+wiki:largest_private_companies_by_revenue:greenergy,Greenergy,GBR,,,energy
 wiki:largest_private_companies_by_revenue:fidelity-investments,Fidelity Investments,USA,,,
 wd:Q1066028,Charles Schwab Corporation,USA,,,
 wd:Q267840,Randstad N.V.,,,,
 wiki:largest_private_companies_by_revenue:love-s-travel-stops-and-country-stores,Love's Travel Stops & Country Stores,USA,,,
 wd:Q20811256,Coca-Cola Europacific Partners,GBR,,,
+wiki:largest_retail_companies:ross-stores,Ross Stores,,,,
 wd:Q11968665,Felleskjøpet Agri,NOR,,,
 wiki:largest_private_companies_by_revenue:southern-glazer-s-wine-and-spirits,Southern Glazer's Wine & Spirits,USA,,,
+wiki:largest_retail_companies:bj-s-wholesale-club,BJ's Wholesale Club,,,,
+wiki:largest_retail_companies:conad,Conad,,,,
 wiki:largest_russia_companies:surgutneftegas,Surgutneftegas,,,,energy
 wiki:largest_russia_companies:rosatom,Rosatom,,,,
 wiki:largest_private_companies_by_revenue:syst-me-u,Système U,FRA,,,
 wiki:largest_private_companies_by_revenue:wakefern-food-corporation,Wakefern Food Corporation,USA,,,
 wiki:largest_russia_companies:magnit,Magnit,,,,
+wiki:largest_retail_companies:berkshire-hathaway-retail,Berkshire-Hathaway Retail,,,,tech_platform
 wd:Q269792,Ferrero SpA,ITA,,,
+wiki:largest_retail_companies:fast-retailing,Fast Retailing,,,,tech_platform
+wiki:largest_retail_companies:wm-morrison-supermarkets,Wm Morrison Supermarkets,,,,
 wiki:largest_india_companies:infosys,Infosys,,,,
 wiki:largest_private_companies_by_revenue:swire,Swire,GBR,,,
-wiki:largest_private_companies_by_revenue:john-lewis-partnership,John Lewis Partnership,GBR,,,
-wiki:largest_private_companies_by_revenue:meijer,Meijer,USA,,,
 wiki:largest_india_companies:bharti-airtel,Bharti Airtel,,,,tech_platform
+wiki:largest_private_companies_by_revenue:john-lewis-partnership,John Lewis Partnership,GBR,,,
 wiki:largest_private_companies_by_revenue:allied-universal,Allied Universal,USA,,,
 wiki:largest_private_companies_by_revenue:jm-family-enterprises,JM Family Enterprises,USA,,,
+wiki:largest_retail_companies:autozone,AutoZone,,,,
 wiki:largest_india_companies:vedanta-limited,Vedanta Limited,,,,
 wiki:largest_india_companies:coal-india,Coal India,,,,
 wiki:largest_private_companies_by_revenue:octopus-group,Octopus Group,GBR,,,
 wiki:largest_india_companies:bank-of-baroda,Bank of Baroda,,,,finance
+wiki:largest_retail_companies:kering,Kering,,,,
+wiki:largest_retail_companies:e-mart,e-mart,,,,
 wiki:largest_private_companies_by_revenue:world-wide-technology,World Wide Technology,USA,,,
 wd:Q14890229,kiwi.com,CZE,,,
 wiki:largest_india_companies:canara-bank,Canara Bank,,,,finance
 wiki:largest_india_companies:mahindra-and-mahindra,Mahindra & Mahindra,,,,
+wiki:largest_retail_companies:cencosud,Cencosud,,,,
 wiki:largest_india_companies:axis-bank,Axis Bank,,,,finance
+wiki:largest_retail_companies:richemont,Richemont,,,,
+wiki:largest_retail_companies:kohl-s,Kohl's,,,,
+wiki:largest_retail_companies:marks-and-spencer,Marks & Spencer,,,,
+wiki:largest_retail_companies:kingfisher,Kingfisher,,,,
+wiki:largest_retail_companies:coop-italia,Coop Italia,,,,
+wiki:largest_retail_companies:spar-holding,Spar Holding,,,,
 wiki:largest_russia_companies:rosseti,Rosseti,,,,
 wiki:largest_private_companies_by_revenue:subway,Subway,USA,,,
 wiki:largest_india_companies:gail,GAIL,,,,tech_platform
 wd:Q32491,Qantas Airways,AUS,,,tech_platform
+wiki:largest_retail_companies:o-reilly-automotive,O'Reilly Automotive,,,,
 wiki:largest_russia_companies:inter-rao,Inter RAO,,,,
+wiki:largest_retail_companies:s-group,S Group,,,,
 wiki:largest_private_companies_by_revenue:chanel,Chanel,FRA,,,
 wiki:largest_private_companies_by_revenue:gordon-food-service,Gordon Food Service,USA,,,
+wiki:largest_retail_companies:chedraui,Chedraui,,,,
+wiki:largest_retail_companies:dirk-rossmann-gmbh,Dirk Rossmann GmbH,,,,
 wiki:largest_india_companies:grasim-industries,Grasim Industries,,,,
+wiki:largest_retail_companies:metro-inc,Metro Inc.,,,,
+wiki:largest_retail_companies:avolta,Avolta,,,,
+wiki:largest_retail_companies:gap,Gap,,,,
+wiki:largest_retail_companies:vipshop,Vipshop,,,,
 wiki:largest_india_companies:punjab-national-bank,Punjab National Bank,,,,finance
 wd:Q20755644,ČSOB Pojišťovna,CZE,,,
+wiki:largest_retail_companies:otto,Otto,,,,
 wiki:largest_russia_companies:transneft,Transneft,,,,
 wiki:largest_private_companies_by_revenue:inspire-brands,Inspire Brands,USA,,,
+wiki:largest_retail_companies:tractor-supply-company,Tractor Supply Company,,,,
 wiki:largest_private_companies_by_revenue:turner-construction,Turner Construction,USA,,,
 wiki:largest_india_companies:union-bank-of-india,Union Bank of India,,,,finance
+wiki:largest_retail_companies:genuine-parts-company,Genuine Parts Company,,,,
+wiki:largest_retail_companies:nordstrom,Nordstrom,,,,
+wiki:largest_retail_companies:ica-gruppen,ICA Gruppen,,,,
 wd:Q1017833,LiAZ,RUS,,,
 wiki:largest_private_companies_by_revenue:land-o-lakes,Land O' Lakes,USA,,,
 wiki:largest_private_companies_by_revenue:medline-industries,Medline Industries,USA,,,
+wiki:largest_retail_companies:chow-tai-fook,Chow Tai Fook,,,,tech_platform
+wiki:largest_retail_companies:assa-atacadista,Assaí Atacadista,,,,
 wiki:largest_private_companies_by_revenue:trader-joe-s,Trader Joe's,USA,,,
 wiki:largest_private_companies_by_revenue:allegis-group,Allegis Group,USA,,,
 wiki:largest_private_companies_by_revenue:the-guardian-life-insurance-company-of-america,The Guardian Life Insurance Company of America,USA,,,finance
+wiki:largest_retail_companies:herm-s,Hermès,,,,
+wiki:largest_retail_companies:el-corte-ingl-s,El Corte Inglés,,,,
 wiki:largest_india_companies:hcl-technologies,HCL Technologies,,,,
+wiki:largest_retail_companies:menards,Menards,,,,
+wiki:largest_retail_companies:shoprite-holdings,Shoprite Holdings,,,,
+wiki:largest_retail_companies:jd-sports,JD Sports,,,,critical_infra
 wiki:largest_private_companies_by_revenue:american-family-insurance-group,American Family Insurance Group,USA,,,finance
+wiki:largest_retail_companies:hy-vee,Hy-Vee,,,,
 wiki:largest_private_companies_by_revenue:wawa,Wawa,USA,,,
 wiki:largest_india_companies:bajaj-finserv,Bajaj Finserv,,,,
+wiki:largest_retail_companies:decathlon-group,Decathlon Group,,,,
+wiki:largest_retail_companies:dick-s-sporting-goods,Dick's Sporting Goods,,,,critical_infra
 wiki:largest_india_companies:steel-authority-of-india,Steel Authority of India,,,,
 wiki:largest_private_companies_by_revenue:kingston-technology,Kingston Technology,USA,,,
 wiki:largest_india_companies:adani-enterprises,Adani Enterprises,,,,
@@ -580,18 +660,16 @@ wiki:largest_private_companies_by_revenue:graybar,Graybar,USA,,,
 wiki:largest_russia_companies:gazprombank,Gazprombank,,,,finance
 wiki:largest_russia_companies:evraz,Evraz,,,,
 wiki:largest_india_companies:wipro,Wipro,,,,
-wiki:largest_private_companies_by_revenue:menards,Menards,USA,,,
 wiki:largest_private_companies_by_revenue:shi-international-corp,SHI International Corp,USA,,,
 wd:Q666888,Intersport,CHE,,,critical_infra
-wiki:largest_private_companies_by_revenue:s-c-johnson-and-son,S. C. Johnson & Son,USA,,,
 wiki:largest_private_companies_by_revenue:bloomberg,Bloomberg,USA,,,
+wiki:largest_private_companies_by_revenue:s-c-johnson-and-son,S. C. Johnson & Son,USA,,,
 wiki:largest_private_companies_by_revenue:mckinsey,McKinsey,USA,,,
 wd:Q12045462,Pivovary Staropramen,CZE,,,
 wiki:largest_private_companies_by_revenue:the-whiting-turner-contracting-company,The Whiting-Turner Contracting Company,USA,,,
 wd:Q58218819,PRO-DOMA,CZE,,,
 wiki:largest_private_companies_by_revenue:jones-financial-edward-jones,Jones Financial (Edward Jones),USA,,,finance
 wiki:largest_private_companies_by_revenue:calpine,Calpine,USA,,,
-wiki:largest_private_companies_by_revenue:hy-vee,Hy-Vee,USA,,,
 wiki:largest_russia_companies:novolipetsk-steel,Novolipetsk Steel,,,,
 wiki:largest_private_companies_by_revenue:pacific-life,Pacific Life,USA,,,
 wiki:largest_russia_companies:sibur,Sibur,,,,
@@ -632,10 +710,10 @@ wiki:largest_russia_companies:rushydro,RusHydro,,,,
 wiki:largest_russia_companies:megafon,MegaFon,,,,
 wiki:largest_russia_companies:lenta,Lenta,,,,
 wiki:largest_russia_companies:metalloinvest,Metalloinvest,,,,
-wiki:largest_india_companies:titan-company,Titan Company,,,,
 wiki:largest_russia_companies:stroygazmontazh,Stroygazmontazh,,,,
-wiki:largest_india_companies:dmart,DMart,,,,
+wiki:largest_india_companies:titan-company,Titan Company,,,,
 wiki:largest_india_companies:adani-power,Adani Power,,,,critical_infra
+wiki:largest_india_companies:dmart,DMart,,,,
 wiki:largest_russia_companies:t-plus,T Plus,,,,
 wd:Q565050,Hamburg Süd,,,,
 wiki:largest_india_companies:jindal-steel-and-power,Jindal Steel and Power,,,,critical_infra
@@ -654,9 +732,9 @@ wd:Q47099,Grupo Televisa,MEX,,,
 wiki:largest_russia_companies:rostelecom,Rostelecom,,,,telecom
 wd:Q795454,Barnes & Noble,USA,,,
 wd:Q1202053,Vonovia,DEU,,,
-wiki:largest_russia_companies:alfa-bank,Alfa-Bank,,,,finance
-wiki:largest_russia_companies:otkritie-holding,Otkritie Holding,,,,
 wiki:largest_russia_companies:mechel,Mechel,,,,
+wiki:largest_russia_companies:otkritie-holding,Otkritie Holding,,,,
+wiki:largest_russia_companies:alfa-bank,Alfa-Bank,,,,finance
 wiki:largest_russia_companies:vnesheconombank,Vnesheconombank,,,,finance
 wd:Q21180783,Mountfield,CZE,,,
 wiki:largest_russia_companies:auchan-russia,Auchan Russia,FRA,,,
@@ -675,8 +753,8 @@ wiki:largest_russia_companies:protek,Protek,,,,
 wiki:largest_india_companies:shriram-transport-finance,Shriram Transport Finance,,,,"finance,critical_infra"
 wiki:largest_russia_companies:oao-tmk,OAO TMK,,,,
 wd:Q790788,Avianca Group,COL,,,
-wiki:largest_india_companies:central-bank-of-india,Central Bank of India,,,,finance
 wiki:largest_india_companies:asian-paints,Asian Paints,,,,tech_platform
+wiki:largest_india_companies:central-bank-of-india,Central Bank of India,,,,finance
 wiki:largest_russia_companies:russian-helicopters,Russian Helicopters,,,,
 wiki:largest_russia_companies:tns-energo,TNS Energo [ru],,,,
 wiki:largest_russia_companies:katren,Katren [ru],,,,
@@ -690,8 +768,8 @@ wiki:largest_russia_companies:leroy-merlin-russia,Leroy Merlin Russia,FRA,,,
 wiki:largest_russia_companies:avtovaz,AvtoVAZ,,,,
 wiki:largest_russia_companies:new-stream-group,New Stream Group [ru],,,,
 wiki:largest_russia_companies:merlion,Merlion,,,,
-wiki:largest_russia_companies:avtotor,Avtotor,,,,
 wiki:largest_india_companies:idbi-bank,IDBI Bank,,,,finance
+wiki:largest_russia_companies:avtotor,Avtotor,,,,
 wiki:largest_russia_companies:tactical-missiles-corporation,Tactical Missiles Corporation,,,,defense
 wiki:largest_russia_companies:redandwhite,Red&White,,,,
 wd:Q19800576,Elektrizace železnic Praha,CZE,,,
@@ -699,13 +777,13 @@ wiki:largest_russia_companies:mostotrest,Mostotrest,,,,
 wiki:largest_india_companies:indus-towers,Indus Towers,,,,
 wiki:largest_russia_companies:mumt-british-american-tobacco,MUMT (British American Tobacco),GBR,,,
 wiki:largest_india_companies:dr-reddy-s-laboratories,Dr. Reddy's Laboratories,,,,
-wiki:largest_russia_companies:m-video,M.video,,,,
 wiki:largest_russia_companies:dns-group,DNS Group [ru],,,,
+wiki:largest_russia_companies:m-video,M.video,,,,
 wiki:largest_india_companies:lic-housing-finance,LIC Housing Finance,,,,finance
 wd:Q17322068,HDI Global,DEU,,,
 wd:Q23239,Amtrak,USA,,,
-wiki:largest_india_companies:indian-railway-finance-corporation,Indian Railway Finance Corporation,,,,"tech_platform,finance,critical_infra"
 wiki:largest_india_companies:adani-ports-and-sez,Adani Ports & SEZ,,,,critical_infra
+wiki:largest_india_companies:indian-railway-finance-corporation,Indian Railway Finance Corporation,,,,"tech_platform,finance,critical_infra"
 wiki:largest_india_companies:federal-bank,Federal Bank,,,,finance
 wd:Q33046790,Heineken Česká republika,CZE,,,
 wd:Q322598,Galeria Kaufhof,DEU,,,
@@ -728,16 +806,16 @@ wiki:largest_india_companies:bank-of-maharashtra,Bank of Maharashtra,,,,finance
 wd:Q2052213,Douglas Holding,DEU,,,
 wd:Q688816,Verbund,AUT,,,
 wiki:largest_russia_companies:sns-holding,SNS Holding [ru],,,,
-wiki:largest_russia_companies:national-computer-corporation,National Computer Corporation [ru],,,,
 wiki:largest_russia_companies:uralkali,Uralkali,,,,
-wiki:largest_russia_companies:taif-nk,TAIF-NK [ru],,,,tech_platform
+wiki:largest_russia_companies:national-computer-corporation,National Computer Corporation [ru],,,,
 wiki:largest_russia_companies:polyus,Polyus,,,,
-wiki:largest_russia_companies:united-company-eurobusiness-euroset,United Company Eurobusiness Euroset,,,,
+wiki:largest_russia_companies:taif-nk,TAIF-NK [ru],,,,tech_platform
 wiki:largest_russia_companies:chelyabinsk-pipe-rolling-plant,Chelyabinsk Pipe Rolling Plant,,,,
+wiki:largest_russia_companies:united-company-eurobusiness-euroset,United Company Eurobusiness Euroset,,,,
 wiki:largest_russia_companies:sodrugestvo,Sodrugestvo,,,,media
-wiki:largest_russia_companies:sogaz,SOGAZ,,,,
-wiki:largest_russia_companies:kamaz,KamAZ,,,,
 wiki:largest_russia_companies:transmashholding,Transmashholding,,,,
+wiki:largest_russia_companies:kamaz,KamAZ,,,,
+wiki:largest_russia_companies:sogaz,SOGAZ,,,,
 wiki:largest_russia_companies:stroytransneftegaz-formerly-stroytransgaz,StroyTransNefteGaz (formerly Stroytransgaz),,,,
 wiki:largest_russia_companies:fc-pulse,FC Pulse [ru],,,,
 wd:Q41567362,MP Krásno,CZE,,,
@@ -752,8 +830,8 @@ wiki:largest_russia_companies:credit-bank-of-moscow,Credit Bank of Moscow,,,,fin
 wiki:largest_russia_companies:lsr-group,LSR Group,,,,
 wiki:largest_russia_companies:mosinzhproekt,Mosinzhproekt [ru],,,,
 wiki:largest_russia_companies:major-group,Major Group [ru],,,,
-wiki:largest_russia_companies:forteinvest,ForteInvest,,,,
 wiki:largest_india_companies:cifcl,CIFCL,,,,
+wiki:largest_russia_companies:forteinvest,ForteInvest,,,,
 wiki:largest_russia_companies:irkutsk-oil-company,Irkutsk Oil Company,,,,energy
 wd:Q1943725,Molslinjen,DNK,,,
 wiki:largest_russia_companies:uralvagonzavod,Uralvagonzavod,,,,
@@ -833,8 +911,8 @@ wd:Q1742438,Kulmbacher Brewery,DEU,,,
 wd:Q135189065,Baker Tilly France,FRA,,,
 wd:Q11090076,ČSAD MHD Kladno,CZE,,,
 wd:Q27479372,N26,DEU,,,
-wiki:largest_india_companies:jio-financial-services,Jio Financial Services,,,,finance
 wiki:largest_india_companies:bajaj-holdings-and-investment,Bajaj Holdings & Investment,,,,
+wiki:largest_india_companies:jio-financial-services,Jio Financial Services,,,,finance
 wd:Q57005883,Outland,NOR,,,
 wd:Q1517919,Heise Group,DEU,,,
 wd:Q3337111,Nature & Découvertes,FRA,,,

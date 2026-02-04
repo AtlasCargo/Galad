@@ -122,6 +122,61 @@ PAGES = [
         "url": "https://en.wikipedia.org/wiki/Forbes_Global_2000",
         "label": "Forbes Global 2000",
     },
+    {
+        "id": "largest_technology_companies_by_revenue",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_technology_companies_by_revenue",
+        "label": "Largest technology companies by revenue",
+    },
+    {
+        "id": "largest_oil_and_gas_companies_by_revenue",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_oil_and_gas_companies_by_revenue",
+        "label": "Largest oil and gas companies by revenue",
+    },
+    {
+        "id": "largest_energy_companies_by_revenue",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_energy_companies_by_revenue",
+        "label": "Largest energy companies by revenue",
+    },
+    {
+        "id": "largest_telecommunications_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_telecommunications_companies",
+        "label": "Largest telecommunications companies",
+    },
+    {
+        "id": "largest_retail_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_retail_companies",
+        "label": "Largest retail companies",
+    },
+    {
+        "id": "largest_banks",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_banks",
+        "label": "Largest banks",
+    },
+    {
+        "id": "largest_insurance_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies",
+        "label": "Largest insurance companies",
+    },
+    {
+        "id": "largest_pharmaceutical_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_pharmaceutical_companies",
+        "label": "Largest pharmaceutical companies",
+    },
+    {
+        "id": "largest_automotive_manufacturers_by_revenue",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_automotive_manufacturers_by_revenue",
+        "label": "Largest automotive manufacturers by revenue",
+    },
+    {
+        "id": "largest_software_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_software_companies",
+        "label": "Largest software companies",
+    },
+    {
+        "id": "largest_media_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_media_companies",
+        "label": "Largest media companies",
+    },
 ]
 
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
