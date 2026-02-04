@@ -21,3 +21,16 @@ Place CSV files in `data/raw/seeds/` to seed the influence-first actor list.
 ## Notes
 - Seeds are merged with V-Party entities (if present).
 - The pipeline computes `influence_score` from available signals.
+
+## Optional helper (open seed list)
+Fetch a company seed list from Wikidata:
+
+```
+python scripts/ingest/wikidata_companies.py --limit 2000 --no-order
+```
+
+The script writes `data/raw/seeds/wikidata_companies.csv` with:
+- `revenue_usd` populated only when Wikidata provides USD units (often blank with the truthy revenue query)
+- `employee_count` derived from Wikidata employee counts
+
+Note: `ORDER BY` revenue can time out on WDQS; add `--no-order` for faster, non-ranked retrieval.

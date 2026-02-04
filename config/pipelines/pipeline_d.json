@@ -14,6 +14,7 @@
   "backbone": {
     "description": "Sector-focused seed lists with influence overlays.",
     "sources": [
+      {"name": "Wikidata revenue-ranked companies", "type": "open_seed", "status": "scaffold"},
       {"name": "Media groups", "type": "sector_seed", "status": "planned"},
       {"name": "Tech platforms", "type": "sector_seed", "status": "planned"},
       {"name": "Telecoms", "type": "sector_seed", "status": "planned"},
@@ -45,7 +46,9 @@
       "budget_usd": 0.2,
       "users": 0.15,
       "audience": 0.1,
-      "member_count": 0.05
+      "member_count": 0.05,
+      "employee_count": 0.1,
+      "years_active": 0.05
     },
     "notes": "Influence scoring requires clear weighting rules."
   },
@@ -70,6 +73,6 @@
   "ingestion": {
     "enabled": true,
     "seed_dir": "data/raw/seeds",
-    "notes": "Seed-driven ingestion; add CSVs in data/raw/seeds."
+    "notes": "Seed-driven ingestion; add CSVs in data/raw/seeds (see scripts/ingest/wikidata_companies.py for open seed)."
   }
 }

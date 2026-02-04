@@ -100,19 +100,20 @@ def _normalize(series: pd.Series) -> pd.Series:
 
 
 def _compute_influence(df: pd.DataFrame, weights: Dict[str, float]) -> pd.Series:
-    parts = []
-    total_weight = 0.0
+    score = pd.Series(0.0, index=df.index, dtype="float64")
+    total_weight = pd.Series(0.0, index=df.index, dtype="float64")
     for signal, weight in weights.items():
         if signal not in df.columns:
             continue
         norm = _normalize(df[signal])
-        if norm.notna().sum() == 0:
+        mask = norm.notna()
+        if mask.sum() == 0:
             continue
-        parts.append(norm * float(weight))
-        total_weight += float(weight)
-    if not parts or total_weight == 0:
-        return pd.Series([np.nan] * len(df), index=df.index)
-    return sum(parts) / total_weight
+        w = float(weight)
+        score = score + norm.fillna(0.0) * w
+        total_weight = total_weight + mask.astype("float64") * w
+    total_weight = total_weight.replace(0.0, np.nan)
+    return score / total_weight
 
 
 def _ensure_required(df: pd.DataFrame, ctx: List[str]) -> None:
@@ -120,6 +121,22 @@ def _ensure_required(df: pd.DataFrame, ctx: List[str]) -> None:
     missing = [col for col in required if col not in df.columns]
     if missing:
         ctx.append(f"Missing required columns: {', '.join(missing)}")
+
+
+def _map_seed_columns(df: pd.DataFrame) -> pd.DataFrame:
+    if "employee_count" not in df.columns and "employees_raw" in df.columns:
+        df["employee_count"] = pd.to_numeric(df["employees_raw"], errors="coerce")
+
+    if "revenue_usd" not in df.columns and "revenue_raw" in df.columns:
+        revenue = pd.to_numeric(df["revenue_raw"], errors="coerce")
+        if "revenue_unit" in df.columns:
+            unit = df["revenue_unit"].astype(str)
+            is_usd = unit.str.contains("Q4917", na=False) | unit.str.contains("USD", case=False, na=False)
+            df["revenue_usd"] = revenue.where(is_usd)
+        else:
+            df["revenue_usd"] = pd.Series([np.nan] * len(df), index=df.index)
+
+    return df
 
 
 def main() -> int:
@@ -142,6 +159,8 @@ def main() -> int:
             "users": 0.15,
             "audience": 0.1,
             "member_count": 0.05,
+            "employee_count": 0.1,
+            "years_active": 0.05,
         }
 
     seed_df = _read_seed_files(Path(args.seed_dir))
@@ -157,6 +176,7 @@ def main() -> int:
         raise SystemExit("No seed data found. Add CSVs to data/raw/seeds or provide V-Party outputs.")
 
     combined["country_iso3"] = combined["country_iso3"].astype(str).str.upper()
+    combined = _map_seed_columns(combined)
     for col in SIGNAL_COLUMNS:
         if col in combined.columns:
             combined[col] = pd.to_numeric(combined[col], errors="coerce")

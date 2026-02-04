@@ -22,6 +22,12 @@ Sub-state outputs:
 - `data/output/vparty_party_year.csv` (optional, if V-Party provided)
 - `data/output/vparty_entities.csv` (optional)
 
+Pipeline D outputs (optional):
+
+- `data/output/top_actors_influence.csv`
+- `data/output/org_classification_map.csv`
+- `data/output/org_coverage_gaps.csv`
+
 ## Sources (official or primary)
 
 Country-level indicators:
@@ -83,6 +89,15 @@ If you want to proceed with partial data, add `--allow-missing`.
 ```
 python scripts/build_substate_dataset.py \
   --vparty data/raw/vparty_country_party_date.csv
+```
+
+5) Optional: seed Pipeline D using open data (Wikidata), then run ingestion:
+
+```
+python scripts/ingest/wikidata_companies.py --limit 2000 --no-order
+python scripts/run_pipeline.py
+python scripts/classify_overlays.py --input data/output/top_actors_influence.csv
+python scripts/estimate_coverage.py --input data/output/org_classification_map.csv
 ```
 
 ## Required raw files (place in `data/raw/`)
