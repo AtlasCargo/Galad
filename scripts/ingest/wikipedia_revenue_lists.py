@@ -48,14 +48,29 @@ PAGES = [
         "label": "Largest companies in the United Kingdom",
     },
     {
+        "id": "largest_germany_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_German_companies",
+        "label": "Largest companies in Germany",
+    },
+    {
+        "id": "largest_france_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_French_companies",
+        "label": "Largest companies in France",
+    },
+    {
+        "id": "largest_italy_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_Italian_companies",
+        "label": "Largest companies in Italy",
+    },
+    {
+        "id": "largest_spain_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_Spanish_companies",
+        "label": "Largest companies in Spain",
+    },
+    {
         "id": "largest_asia_companies",
         "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_Asia",
         "label": "Largest companies in Asia by revenue",
-    },
-    {
-        "id": "largest_china_companies",
-        "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_China",
-        "label": "Largest companies in China",
     },
     {
         "id": "largest_japan_companies",
@@ -76,6 +91,21 @@ PAGES = [
         "id": "largest_australia_companies",
         "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_Australia",
         "label": "Largest companies in Australia",
+    },
+    {
+        "id": "largest_brazil_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_Brazilian_companies",
+        "label": "Largest companies in Brazil",
+    },
+    {
+        "id": "largest_mexico_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_Mexican_companies",
+        "label": "Largest companies in Mexico",
+    },
+    {
+        "id": "largest_russia_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_companies_of_Russia",
+        "label": "Largest companies in Russia (List of companies of Russia)",
     },
     {
         "id": "largest_private_companies_by_revenue",

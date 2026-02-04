@@ -484,7 +484,7 @@ ESP,security,0,missing
 ESP,finance,0,missing
 ESP,critical_infra,0,missing
 ESP,energy,0,missing
-ESP,none,65,present
+ESP,none,61,present
 EST,media,0,missing
 EST,tech_platform,5,present
 EST,telecom,0,missing
@@ -556,7 +556,7 @@ GBR,security,0,missing
 GBR,finance,1,present
 GBR,critical_infra,1,present
 GBR,energy,1,present
-GBR,none,43,present
+GBR,none,42,present
 GEO,media,0,missing
 GEO,tech_platform,0,missing
 GEO,telecom,0,missing
@@ -754,7 +754,7 @@ ITA,security,0,missing
 ITA,finance,1,present
 ITA,critical_infra,0,missing
 ITA,energy,0,missing
-ITA,none,69,present
+ITA,none,66,present
 JAM,media,0,missing
 JAM,tech_platform,1,present
 JAM,telecom,0,missing
@@ -781,7 +781,7 @@ JPN,security,0,missing
 JPN,finance,4,present
 JPN,critical_infra,0,missing
 JPN,energy,0,missing
-JPN,none,50,present
+JPN,none,51,present
 KAZ,media,0,missing
 KAZ,tech_platform,2,present
 KAZ,telecom,0,missing
@@ -1320,8 +1320,8 @@ RUS,defense,0,missing
 RUS,security,0,missing
 RUS,finance,1,present
 RUS,critical_infra,3,present
-RUS,energy,6,present
-RUS,none,59,present
+RUS,energy,5,present
+RUS,none,58,present
 RWA,media,0,missing
 RWA,tech_platform,2,present
 RWA,telecom,0,missing
@@ -1645,7 +1645,7 @@ USA,security,0,missing
 USA,finance,16,present
 USA,critical_infra,4,present
 USA,energy,7,present
-USA,none,184,present
+USA,none,185,present
 UZB,media,0,missing
 UZB,tech_platform,1,present
 UZB,telecom,0,missing
