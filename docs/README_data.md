@@ -4,6 +4,7 @@ This repo **tracks generated outputs** in `data/output/` and **does not** track 
 
 ## Included outputs
 - `data/output/country_2020_2026.csv`
+- `data/output/country_2020_2026.sqlite` (may be empty due to SQLite column limits)
 - `data/output/column_map.csv`
 - `data/output/country_robustness_2020_2026.csv`
 - `data/output/robustness_thresholds.json`
