@@ -1,0 +1,61 @@
+{
+  "id": "pipeline_b",
+  "label": "Pipeline B",
+  "name": "Public-Company Centric (Market Cap/Revenue)",
+  "status": "candidate",
+  "stage": "scaffold",
+  "last_updated": "2026-02-04",
+  "goal": "Accurate, high-quality top list for public firms.",
+  "constraints": {
+    "open_only": false,
+    "commercial_data_allowed": false,
+    "public_only": true
+  },
+  "backbone": {
+    "description": "Exchange listings and securities filings.",
+    "sources": [
+      {"name": "Stock exchanges", "type": "listing", "status": "planned"},
+      {"name": "SEC EDGAR", "type": "filing", "status": "planned"},
+      {"name": "National securities filings", "type": "filing", "status": "planned"}
+    ]
+  },
+  "sources": {
+    "companies": [
+      {"name": "Public company filings", "type": "filing", "status": "planned"}
+    ],
+    "state_owned_enterprises": [
+      {"name": "Listed SOEs", "type": "listing", "status": "planned"}
+    ]
+  },
+  "ranking": {
+    "metric": "tbd",
+    "allowed_metrics": ["market_cap", "revenue"],
+    "notes": "Public firms only; excludes most private firms and unlisted SOEs."
+  },
+  "influence_overlay": {
+    "enabled": false,
+    "notes": "Not part of pipeline B."
+  },
+  "planned_outputs": [
+    {"path": "data/output/top_10k_corporations.csv", "description": "Ranked list of public companies."},
+    {"path": "data/output/org_financials_normalized.csv", "description": "Normalized financials from filings."},
+    {"path": "data/output/org_classification_map.csv", "description": "Sector and category tags."},
+    {"path": "data/output/org_coverage_gaps.csv", "description": "Coverage estimates by country/sector."}
+  ],
+  "pros": [
+    "Clean financials",
+    "Consistent reporting"
+  ],
+  "cons": [
+    "Misses large private firms",
+    "Misses many SOEs"
+  ],
+  "open_questions": [
+    "Which metric should be primary for ranking: market cap or revenue?",
+    "Should delisted or recently delisted firms be included?"
+  ],
+  "ingestion": {
+    "enabled": false,
+    "notes": "Scaffolding only; no data ingestion configured."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "pipeline_a",
+  "label": "Pipeline A",
+  "name": "Open-Only Global (LEI + Registries)",
+  "status": "candidate",
+  "stage": "scaffold",
+  "last_updated": "2026-02-04",
+  "goal": "Maximum openness with consistent global identifiers.",
+  "constraints": {
+    "open_only": true,
+    "commercial_data_allowed": false,
+    "public_only": false
+  },
+  "backbone": {
+    "description": "Global identifiers from LEI registries.",
+    "sources": [
+      {"name": "GLEIF LEI", "type": "registry", "status": "planned"}
+    ]
+  },
+  "sources": {
+    "companies": [
+      {"name": "OpenCorporates", "type": "registry", "status": "planned"},
+      {"name": "National registries with bulk downloads", "type": "registry", "status": "planned"}
+    ],
+    "ngos_ingos": [
+      {"name": "IRS EO BMF", "type": "registry", "status": "planned"},
+      {"name": "UK Charity Commission", "type": "registry", "status": "planned"},
+      {"name": "IATI registry", "type": "registry", "status": "planned"}
+    ]
+  },
+  "ranking": {
+    "metric": "tbd",
+    "allowed_metrics": ["revenue", "assets", "market_cap"],
+    "notes": "Coverage may be incomplete for a true global top-10k using open sources only."
+  },
+  "influence_overlay": {
+    "enabled": false,
+    "notes": "Not part of pipeline A."
+  },
+  "planned_outputs": [
+    {"path": "data/output/top_10k_corporations.csv", "description": "Ranked list of top entities."},
+    {"path": "data/output/org_financials_normalized.csv", "description": "Normalized financials."},
+    {"path": "data/output/org_classification_map.csv", "description": "Sector and category tags."},
+    {"path": "data/output/org_coverage_gaps.csv", "description": "Coverage estimates by country/sector."}
+  ],
+  "pros": [
+    "Open licensing",
+    "Auditable provenance"
+  ],
+  "cons": [
+    "Uneven financial coverage",
+    "Top-10k ranking may be incomplete"
+  ],
+  "open_questions": [
+    "Which ranking metric should be used when multiple are available?",
+    "Which countries have usable bulk registry data?"
+  ],
+  "ingestion": {
+    "enabled": false,
+    "notes": "Scaffolding only; no data ingestion configured."
+  }
+}
