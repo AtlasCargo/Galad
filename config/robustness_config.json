@@ -1,0 +1,41 @@
+{
+  "horizon_years": 5,
+  "alignment_metrics": [
+    {"column": "vdem__v2x_libdem", "weight": 1.0, "higher_is_better": true},
+    {"column": "vdem__v2x_polyarchy", "weight": 1.0, "higher_is_better": true},
+    {"column": "vdem__v2x_civlib", "weight": 1.0, "higher_is_better": true},
+    {"column": "fh__total", "weight": 1.0, "higher_is_better": true},
+    {"column": "rsf__score", "weight": 1.0, "higher_is_better": true},
+    {"column": "wgi__va_governance_estimate_approx_2_5_to_2_5", "weight": 1.0, "higher_is_better": true},
+    {"column": "wgi__rl_governance_estimate_approx_2_5_to_2_5", "weight": 1.0, "higher_is_better": true},
+    {"column": "wgi__cc_governance_estimate_approx_2_5_to_2_5", "weight": 1.0, "higher_is_better": true},
+    {"column": "cpi__cpi_score", "weight": 1.0, "higher_is_better": true},
+    {"column": "afi__v2xca_academ", "weight": 1.0, "higher_is_better": true}
+  ],
+  "guardrail_metrics": [
+    {"column": "vdem__v2x_rule", "weight": 1.0, "higher_is_better": true},
+    {"column": "vdem__v2x_accountability", "weight": 1.0, "higher_is_better": true},
+    {"column": "wgi__rl_governance_estimate_approx_2_5_to_2_5", "weight": 1.0, "higher_is_better": true},
+    {"column": "wgi__cc_governance_estimate_approx_2_5_to_2_5", "weight": 1.0, "higher_is_better": true},
+    {"column": "rsf__score", "weight": 1.0, "higher_is_better": true}
+  ],
+  "stress_metrics": [
+    {"column": "vdem__e_coups", "weight": 1.0, "higher_is_better": false},
+    {"column": "vdem__e_pt_coup_attempts", "weight": 1.0, "higher_is_better": false},
+    {"column": "vdem__v2caviol_mean", "weight": 1.0, "higher_is_better": false}
+  ],
+  "vparty": {
+    "antiplural_col": "vparty__v2xpa_antiplural",
+    "popul_col": "vparty__v2xpa_popul",
+    "violence_col": "vparty__v2paviol_mean"
+  },
+  "risk_weights": {
+    "w1_alignment": 1.0,
+    "w2_guardrails": 1.0,
+    "w3_mass": 0.8,
+    "w4_polarization": 0.6,
+    "w5_stress": 0.6,
+    "w6_trend": 0.8
+  },
+  "thresholds_file": "data/output/robustness_thresholds.json"
+}
