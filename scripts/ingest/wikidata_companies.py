@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import random
 import time
 from pathlib import Path
 from typing import Dict, List
@@ -27,15 +28,32 @@ USD_LABELS = {
 }
 
 
-def _query_sparql(query: str, retries: int = 4, backoff: float = 2.0) -> dict:
+def _query_sparql(
+    query: str,
+    retries: int,
+    backoff: float,
+    max_backoff: float,
+    jitter: float,
+    timeout: int,
+) -> tuple[dict, int]:
     headers = {"Accept": "application/sparql-results+json"}
     params = {"query": query}
     for attempt in range(1, retries + 1):
-        resp = requests.get(WDQS_URL, headers=headers, params=params, timeout=120)
+        try:
+            resp = requests.get(WDQS_URL, headers=headers, params=params, timeout=timeout)
+        except requests.RequestException as exc:
+            sleep_for = min(backoff * (2 ** (attempt - 1)), max_backoff)
+            sleep_for = sleep_for * (1.0 + random.random() * jitter)
+            time.sleep(sleep_for)
+            if attempt == retries:
+                raise RuntimeError(f"WDQS request failed after retries: {exc}") from exc
+            continue
         if resp.status_code == 200:
-            return resp.json()
+            return resp.json(), attempt
         if resp.status_code in (429, 503, 504):
-            time.sleep(backoff * attempt)
+            sleep_for = min(backoff * (2 ** (attempt - 1)), max_backoff)
+            sleep_for = sleep_for * (1.0 + random.random() * jitter)
+            time.sleep(sleep_for)
             continue
         raise RuntimeError(f"WDQS error {resp.status_code}: {resp.text[:200]}")
     raise RuntimeError("WDQS query failed after retries")
@@ -88,19 +106,36 @@ def main() -> int:
     parser.add_argument("--output", default="data/raw/seeds/wikidata_companies.csv")
     parser.add_argument("--limit", type=int, default=2000)
     parser.add_argument("--page-size", type=int, default=500)
+    parser.add_argument("--min-page-size", type=int, default=100)
     parser.add_argument("--no-order", action="store_true", help="Disable ORDER BY (faster, not revenue-ranked)")
+    parser.add_argument("--adaptive", action="store_true", help="Use adaptive backoff and dynamic page size")
+    parser.add_argument("--retries", type=int, default=5)
+    parser.add_argument("--base-backoff", type=float, default=2.0)
+    parser.add_argument("--max-backoff", type=float, default=60.0)
+    parser.add_argument("--jitter", type=float, default=0.25)
+    parser.add_argument("--delay", type=float, default=0.2, help="Delay between page requests (seconds)")
+    parser.add_argument("--timeout", type=int, default=120)
     args = parser.parse_args()
 
     out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     rows: List[Dict[str, str]] = []
+    page_size = max(args.page_size, 1)
+    backoff = max(args.base_backoff, 0.1)
     remaining = args.limit
     offset = 0
     while remaining > 0:
-        page = min(args.page_size, remaining)
+        page = min(page_size, remaining)
         query = _build_query(page, offset, order_by_revenue=not args.no_order)
-        payload = _query_sparql(query)
+        payload, attempts = _query_sparql(
+            query,
+            retries=args.retries,
+            backoff=backoff,
+            max_backoff=args.max_backoff,
+            jitter=args.jitter,
+            timeout=args.timeout,
+        )
         bindings = payload.get("results", {}).get("bindings", [])
         if not bindings:
             break
@@ -133,7 +168,14 @@ def main() -> int:
             )
         remaining -= page
         offset += page
-        time.sleep(0.2)
+        if args.adaptive:
+            if attempts > 1:
+                backoff = min(backoff * 1.5, args.max_backoff)
+                if page_size > args.min_page_size:
+                    page_size = max(args.min_page_size, int(page_size * 0.8))
+            else:
+                backoff = max(args.base_backoff, backoff * 0.9)
+        time.sleep(max(args.delay, 0.0))
 
     fieldnames = [
         "entity_id",

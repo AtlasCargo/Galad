@@ -13,8 +13,8 @@ Date: 2026-02-04
   - Thresholds: `data/output/robustness_thresholds.json`
   - Scores: `data/output/country_robustness_2020_2026.csv` (1,394 rows, 16 cols)
 - Influence-first pipeline outputs
-  - `data/output/top_actors_influence.csv` (3,870 rows, 10 cols)
-  - `data/output/org_classification_map.csv` (3,870 rows, 6 cols)
+  - `data/output/top_actors_influence.csv` (3,892 rows, 10 cols)
+  - `data/output/org_classification_map.csv` (3,892 rows, 6 cols)
   - `data/output/org_coverage_gaps.csv` (1,746 rows, 4 cols)
 - Templates
   - `data/output/substate_entities_template.csv`
@@ -34,5 +34,6 @@ Date: 2026-02-04
 
 ## Inputs acquired
 - V-Dem, V-Party, Freedom House, WGI, RSF, HRMI, AFI, CPI (2020–2023), GSI 2023
-- Wikidata seed (companies with revenue property; ~403 entities, generated locally)
+- Wikidata seed (companies with revenue property; ~409 entities, generated locally)
+- Wikidata revenue-ordered list (small; 16 entities)
 - See `data/raw/` for exact files.

@@ -26,7 +26,7 @@ Place CSV files in `data/raw/seeds/` to seed the influence-first actor list.
 Fetch a company seed list from Wikidata:
 
 ```
-python scripts/ingest/wikidata_companies.py --limit 2000 --no-order
+python scripts/ingest/wikidata_companies.py --limit 2000 --no-order --adaptive
 ```
 
 The script writes `data/raw/seeds/wikidata_companies.csv` with:
@@ -34,3 +34,10 @@ The script writes `data/raw/seeds/wikidata_companies.csv` with:
 - `employee_count` derived from Wikidata employee counts
 
 Note: `ORDER BY` revenue can time out on WDQS; add `--no-order` for faster, non-ranked retrieval.
+
+Revenue-ordered small list:
+
+```
+python scripts/ingest/wikidata_companies.py --limit 50 --page-size 25 \
+  --output data/raw/seeds/wikidata_companies_revenue_order.csv
+```
