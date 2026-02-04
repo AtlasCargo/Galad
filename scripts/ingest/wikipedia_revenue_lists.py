@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import urllib.parse
 from io import StringIO
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
@@ -180,6 +181,16 @@ PAGES = [
 ]
 
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
+API_URL = "https://en.wikipedia.org/w/api.php"
+DEFAULT_DISCOVER_QUERIES = [
+    "list of largest companies by revenue",
+    "list of largest companies in",
+    "list of largest companies of",
+    "largest companies by revenue list",
+    "largest companies list",
+    "largest technology companies by revenue",
+    "largest retail companies",
+]
 
 US_STATES = {
     "alabama",
@@ -386,6 +397,42 @@ def _slugify(name: str) -> str:
     return slug
 
 
+def _discover_pages(queries: List[str], limit: int) -> List[Dict[str, str]]:
+    discovered: List[Dict[str, str]] = []
+    seen_urls = {p["url"] for p in PAGES}
+    for query in queries:
+        params = {
+            "action": "query",
+            "list": "search",
+            "srsearch": query,
+            "srlimit": limit,
+            "format": "json",
+        }
+        resp = requests.get(API_URL, params=params, headers={"User-Agent": USER_AGENT}, timeout=60)
+        if resp.status_code != 200:
+            continue
+        payload = resp.json()
+        for item in payload.get("query", {}).get("search", []):
+            title = str(item.get("title", "")).strip()
+            if not title:
+                continue
+            title_lc = title.lower()
+            if "list of" not in title_lc or "company" not in title_lc:
+                continue
+            url = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))
+            if url in seen_urls:
+                continue
+            discovered.append(
+                {
+                    "id": f"discovered_{_slugify(title)}",
+                    "url": url,
+                    "label": title,
+                }
+            )
+            seen_urls.add(url)
+    return discovered
+
+
 def _fetch_tables(url: str) -> List[pd.DataFrame]:
     resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=60)
     resp.raise_for_status()
@@ -396,12 +443,25 @@ def _fetch_tables(url: str) -> List[pd.DataFrame]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Fetch Wikipedia revenue lists")
     parser.add_argument("--output", default="data/raw/seeds/wikipedia_revenue_lists.csv")
+    parser.add_argument("--discover", action="store_true", help="Search Wikipedia for additional list pages")
+    parser.add_argument("--discover-limit", type=int, default=30, help="Max results per search query")
+    parser.add_argument(
+        "--discover-query",
+        action="append",
+        default=[],
+        help="Additional discovery query (repeatable)",
+    )
     args = parser.parse_args()
 
     country_map = _load_country_map()
     rows: List[Dict[str, str]] = []
 
-    for page in PAGES:
+    pages = list(PAGES)
+    if args.discover:
+        queries = args.discover_query or DEFAULT_DISCOVER_QUERIES
+        pages.extend(_discover_pages(queries, args.discover_limit))
+
+    for page in pages:
         try:
             tables = _fetch_tables(page["url"])
         except Exception as exc:  # noqa: BLE001

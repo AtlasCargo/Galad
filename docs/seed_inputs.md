@@ -50,3 +50,15 @@ python scripts/ingest/wikipedia_revenue_lists.py
 
 This writes `data/raw/seeds/wikipedia_revenue_lists.csv` by combining multiple
 Wikipedia list tables (global + regional + private/manufacturing).
+
+Discovery mode (searches Wikipedia for more list pages):
+
+```
+python scripts/ingest/wikipedia_revenue_lists.py --discover --discover-limit 40
+```
+
+SEC company tickers (open, US public companies):
+
+```
+python scripts/ingest/sec_company_tickers.py
+```
