@@ -41,3 +41,12 @@ Revenue-ordered small list:
 python scripts/ingest/wikidata_companies.py --limit 50 --page-size 25 \
   --output data/raw/seeds/wikidata_companies_revenue_order.csv
 ```
+
+Wikipedia revenue lists (open, CC BY-SA):
+
+```
+python scripts/ingest/wikipedia_revenue_lists.py
+```
+
+This writes `data/raw/seeds/wikipedia_revenue_lists.csv` by combining multiple
+Wikipedia list tables (global + regional + private/manufacturing).

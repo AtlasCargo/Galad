@@ -100,6 +100,12 @@ python scripts/classify_overlays.py --input data/output/top_actors_influence.csv
 python scripts/estimate_coverage.py --input data/output/org_classification_map.csv
 ```
 
+Optional: add Wikipedia revenue lists as an additional seed source:
+
+```
+python scripts/ingest/wikipedia_revenue_lists.py
+```
+
 ## Required raw files (place in `data/raw/`)
 
 **V-Dem** (CSV extracted from ZIP):

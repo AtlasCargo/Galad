@@ -11,6 +11,7 @@ This repo now includes scaffold configs for pipelines A–D and an active pipeli
 - `scripts/estimate_coverage.py`
 - `scripts/ingest/pipeline_d.py` (seed-driven ingestion)
 - `scripts/ingest/wikidata_companies.py` (optional open seed helper)
+- `scripts/ingest/wikipedia_revenue_lists.py` (optional open seed helper)
 
 ## What to decide
 1) Ranking metric (revenue / assets / market cap / influence score).
@@ -34,6 +35,7 @@ This writes `data/output/pipeline_status.json` with a checklist.
 ## Quick seed run (Pipeline D)
 ```
 python scripts/ingest/wikidata_companies.py --limit 2000 --no-order
+python scripts/ingest/wikipedia_revenue_lists.py
 python scripts/run_pipeline.py
 python scripts/classify_overlays.py --input data/output/top_actors_influence.csv
 python scripts/estimate_coverage.py --input data/output/org_classification_map.csv
