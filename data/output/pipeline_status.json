@@ -1,7 +1,7 @@
 {
   "pipeline_id": "pipeline_d",
   "name": "Influence-First (Meso-Scale Actors)",
-  "timestamp": "2026-02-04T13:42:51.882527Z",
+  "timestamp": "2026-02-04T13:54:32.362452Z",
   "ingestion_enabled": true,
   "stage": "scaffold",
   "notes": "Seed-driven ingestion; add CSVs in data/raw/seeds (see scripts/ingest/wikidata_companies.py for open seed).",

@@ -23,6 +23,16 @@ PAGES = [
         "label": "Largest companies by revenue (global)",
     },
     {
+        "id": "fortune_global_500",
+        "url": "https://en.wikipedia.org/wiki/Fortune_Global_500",
+        "label": "Fortune Global 500",
+    },
+    {
+        "id": "fortune_500",
+        "url": "https://en.wikipedia.org/wiki/Fortune_500",
+        "label": "Fortune 500 (US)",
+    },
+    {
         "id": "largest_us_companies_by_revenue",
         "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue",
         "label": "Largest companies in the United States by revenue",
@@ -33,9 +43,39 @@ PAGES = [
         "label": "Largest companies in Europe by revenue",
     },
     {
+        "id": "largest_uk_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_Kingdom",
+        "label": "Largest companies in the United Kingdom",
+    },
+    {
         "id": "largest_asia_companies",
         "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_Asia",
         "label": "Largest companies in Asia by revenue",
+    },
+    {
+        "id": "largest_china_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_China",
+        "label": "Largest companies in China",
+    },
+    {
+        "id": "largest_japan_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_Japan",
+        "label": "Largest companies in Japan",
+    },
+    {
+        "id": "largest_india_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_India",
+        "label": "Largest companies in India",
+    },
+    {
+        "id": "largest_canada_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_Canada",
+        "label": "Largest companies in Canada",
+    },
+    {
+        "id": "largest_australia_companies",
+        "url": "https://en.wikipedia.org/wiki/List_of_largest_companies_in_Australia",
+        "label": "Largest companies in Australia",
     },
     {
         "id": "largest_private_companies_by_revenue",
@@ -46,6 +86,11 @@ PAGES = [
         "id": "largest_manufacturing_companies_by_revenue",
         "url": "https://en.wikipedia.org/wiki/List_of_largest_manufacturing_companies_by_revenue",
         "label": "Largest manufacturing companies by revenue",
+    },
+    {
+        "id": "forbes_global_2000",
+        "url": "https://en.wikipedia.org/wiki/Forbes_Global_2000",
+        "label": "Forbes Global 2000",
     },
 ]
 
@@ -241,9 +286,11 @@ def _parse_employees(value: str) -> float | None:
 def _select_table(tables: Iterable[pd.DataFrame]) -> pd.DataFrame | None:
     for table in tables:
         cols = [str(c).lower() for c in table.columns]
-        if any("revenue" in c for c in cols) and any(
-            "company" in c or "name" in c for c in cols
-        ):
+        has_value_col = any("revenue" in c for c in cols) or any("sales" in c for c in cols) or any(
+            "turnover" in c for c in cols
+        )
+        has_name_col = any("company" in c or "name" in c for c in cols)
+        if has_value_col and has_name_col:
             return table
     return None
 
@@ -283,6 +330,10 @@ def main() -> int:
         cols = {str(c).lower(): c for c in table.columns}
         name_col = next((cols[c] for c in cols if "company" in c or "name" in c), None)
         revenue_col = next((cols[c] for c in cols if "revenue" in c), None)
+        if revenue_col is None:
+            revenue_col = next((cols[c] for c in cols if "sales" in c), None)
+        if revenue_col is None:
+            revenue_col = next((cols[c] for c in cols if "turnover" in c), None)
         employees_col = next((cols[c] for c in cols if "employees" in c), None)
         hq_col = next((cols[c] for c in cols if "headquarters" in c), None)
 
