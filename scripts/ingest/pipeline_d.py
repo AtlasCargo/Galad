@@ -139,6 +139,34 @@ def _map_seed_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def _dedupe_entities(df: pd.DataFrame) -> pd.DataFrame:
+    if "entity_id" not in df.columns:
+        return df
+
+    signal_cols = [c for c in SIGNAL_COLUMNS if c in df.columns]
+    extra_cols = [c for c in ["revenue_usd", "revenue_raw", "employee_count", "years_active"] if c in df.columns]
+    score_cols = list(dict.fromkeys(signal_cols + extra_cols))
+    if score_cols:
+        df["_signal_count"] = df[score_cols].notna().sum(axis=1)
+    else:
+        df["_signal_count"] = 0
+
+    revenue = pd.Series([np.nan] * len(df), index=df.index)
+    if "revenue_usd" in df.columns:
+        revenue = pd.to_numeric(df["revenue_usd"], errors="coerce")
+    if "revenue_raw" in df.columns:
+        revenue = revenue.fillna(pd.to_numeric(df["revenue_raw"], errors="coerce"))
+    df["_revenue_rank"] = revenue
+
+    df = df.sort_values(
+        ["_signal_count", "_revenue_rank"],
+        ascending=[False, False],
+        na_position="last",
+    )
+    df = df.drop_duplicates(subset=["entity_id"], keep="first").copy()
+    return df.drop(columns=["_signal_count", "_revenue_rank"], errors="ignore")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Pipeline D ingestion")
     parser.add_argument("--config", default="config/pipelines/pipeline_d.json")
@@ -177,6 +205,7 @@ def main() -> int:
 
     combined["country_iso3"] = combined["country_iso3"].astype(str).str.upper()
     combined = _map_seed_columns(combined)
+    combined = _dedupe_entities(combined)
     for col in SIGNAL_COLUMNS:
         if col in combined.columns:
             combined[col] = pd.to_numeric(combined[col], errors="coerce")

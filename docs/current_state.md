@@ -13,8 +13,8 @@ Date: 2026-02-04
   - Thresholds: `data/output/robustness_thresholds.json`
   - Scores: `data/output/country_robustness_2020_2026.csv` (1,394 rows, 16 cols)
 - Influence-first pipeline outputs
-  - `data/output/top_actors_influence.csv` (4,268 rows, 10 cols)
-  - `data/output/org_classification_map.csv` (4,268 rows, 6 cols)
+  - `data/output/top_actors_influence.csv` (4,266 rows, 10 cols)
+  - `data/output/org_classification_map.csv` (4,266 rows, 6 cols)
   - `data/output/org_coverage_gaps.csv` (1,746 rows, 4 cols)
 - Templates
   - `data/output/substate_entities_template.csv`

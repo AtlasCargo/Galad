@@ -781,7 +781,7 @@ JPN,security,0,missing
 JPN,finance,4,present
 JPN,critical_infra,0,missing
 JPN,energy,0,missing
-JPN,none,53,present
+JPN,none,52,present
 KAZ,media,0,missing
 KAZ,tech_platform,2,present
 KAZ,telecom,0,missing
@@ -1321,7 +1321,7 @@ RUS,security,0,missing
 RUS,finance,2,present
 RUS,critical_infra,3,present
 RUS,energy,6,present
-RUS,none,58,present
+RUS,none,57,present
 RWA,media,0,missing
 RWA,tech_platform,2,present
 RWA,telecom,0,missing

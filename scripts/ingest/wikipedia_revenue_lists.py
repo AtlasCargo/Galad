@@ -151,7 +151,15 @@ def _load_country_map() -> Dict[str, str]:
         candidates.append(raw)
     mapping: Dict[str, str] = {}
     for path in candidates:
-        df = pd.read_csv(path, low_memory=False)
+        try:
+            header = pd.read_csv(path, nrows=0)
+        except Exception:
+            continue
+        cols = list(header.columns)
+        usecols = [c for c in cols if c in ("iso3", "country_name", "name")]
+        if not usecols:
+            continue
+        df = pd.read_csv(path, usecols=usecols, low_memory=False)
         if "iso3" not in df.columns:
             continue
         name_cols = [c for c in df.columns if "country" in c.lower() or c.lower() == "name"]
