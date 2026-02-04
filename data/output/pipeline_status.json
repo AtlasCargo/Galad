@@ -1,0 +1,13 @@
+{
+  "pipeline_id": "pipeline_d",
+  "name": "Influence-First (Meso-Scale Actors)",
+  "timestamp": "2026-02-04T11:28:57.803607Z",
+  "ingestion_enabled": false,
+  "stage": "scaffold",
+  "notes": "Scaffolding only; no data ingestion configured.",
+  "next_actions": [
+    "Confirm ranking metric",
+    "Confirm sources and licenses",
+    "Enable ingestion in config"
+  ]
+}

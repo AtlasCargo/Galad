@@ -1,0 +1,26 @@
+{
+  "source": "NAICS 2-digit (summary)",
+  "version": "2022",
+  "sectors": [
+    {"code": "11", "label": "Agriculture, forestry, fishing and hunting"},
+    {"code": "21", "label": "Mining, quarrying, and oil and gas extraction"},
+    {"code": "22", "label": "Utilities"},
+    {"code": "23", "label": "Construction"},
+    {"code": "31-33", "label": "Manufacturing"},
+    {"code": "42", "label": "Wholesale trade"},
+    {"code": "44-45", "label": "Retail trade"},
+    {"code": "48-49", "label": "Transportation and warehousing"},
+    {"code": "51", "label": "Information"},
+    {"code": "52", "label": "Finance and insurance"},
+    {"code": "53", "label": "Real estate and rental and leasing"},
+    {"code": "54", "label": "Professional, scientific, and technical services"},
+    {"code": "55", "label": "Management of companies and enterprises"},
+    {"code": "56", "label": "Administrative and support and waste management and remediation services"},
+    {"code": "61", "label": "Educational services"},
+    {"code": "62", "label": "Health care and social assistance"},
+    {"code": "71", "label": "Arts, entertainment, and recreation"},
+    {"code": "72", "label": "Accommodation and food services"},
+    {"code": "81", "label": "Other services (except public administration)"},
+    {"code": "92", "label": "Public administration"}
+  ]
+}

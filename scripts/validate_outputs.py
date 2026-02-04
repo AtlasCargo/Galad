@@ -36,6 +36,7 @@ OPTIONAL_FILES = (
     "robustness_thresholds.json",
     "vparty_entities.csv",
     "vparty_party_year.csv",
+    "pipeline_status.json",
 )
 
 
@@ -245,6 +246,18 @@ def _validate_robustness_thresholds(path: Path, ctx: ValidationContext) -> None:
             ctx.error(f"{path}: missing '{key}' section")
 
 
+def _validate_pipeline_status(path: Path, ctx: ValidationContext) -> None:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except (OSError, json.JSONDecodeError) as exc:
+        ctx.error(f"{path}: unable to read JSON: {exc}")
+        return
+    for key in ("pipeline_id", "name", "timestamp", "ingestion_enabled"):
+        if key not in payload:
+            ctx.error(f"{path}: missing '{key}' field")
+
+
 def _validate_parquet(path: Path, ctx: ValidationContext) -> None:
     if path.stat().st_size <= 0:
         ctx.error(f"{path}: parquet file is empty")
@@ -296,6 +309,7 @@ def _dispatch_validators() -> Dict[str, Callable[[Path, ValidationContext], None
         "vparty_party_year.csv": _validate_vparty_party_year,
         "country_robustness_2020_2026.csv": _validate_country_robustness,
         "robustness_thresholds.json": _validate_robustness_thresholds,
+        "pipeline_status.json": _validate_pipeline_status,
         "country_2020_2026.parquet": _validate_parquet,
     }
 

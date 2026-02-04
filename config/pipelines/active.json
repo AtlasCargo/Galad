@@ -1,0 +1,5 @@
+{
+  "active_pipeline_id": "pipeline_d",
+  "config_path": "config/pipelines/pipeline_d.json",
+  "notes": "Active pipeline for influence-first meso-scale actors. Ingestion disabled until sources are selected."
+}

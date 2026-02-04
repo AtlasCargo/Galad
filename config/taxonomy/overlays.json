@@ -1,0 +1,52 @@
+{
+  "overlays": [
+    {
+      "id": "media",
+      "label": "Media & Publishing",
+      "keywords": ["media", "news", "press", "broadcast", "television", "tv", "radio", "newspaper", "publisher", "publishing"],
+      "naics_codes": ["51"]
+    },
+    {
+      "id": "tech_platform",
+      "label": "Tech Platforms & Social Media",
+      "keywords": ["platform", "social", "search", "cloud", "ai", "software", "internet"],
+      "naics_codes": ["51", "54"]
+    },
+    {
+      "id": "telecom",
+      "label": "Telecoms & Network Infrastructure",
+      "keywords": ["telecom", "telecommunications", "mobile", "wireless", "fiber", "broadband"],
+      "naics_codes": ["51"]
+    },
+    {
+      "id": "defense",
+      "label": "Defense & Aerospace",
+      "keywords": ["defense", "aerospace", "weapons", "missile", "armament", "military"],
+      "naics_codes": ["31-33"]
+    },
+    {
+      "id": "security",
+      "label": "Security & Surveillance",
+      "keywords": ["security", "surveillance", "intelligence", "cyber", "risk"],
+      "naics_codes": ["51", "54"]
+    },
+    {
+      "id": "finance",
+      "label": "Finance & Systemic Institutions",
+      "keywords": ["bank", "finance", "financial", "insurance", "asset", "capital"],
+      "naics_codes": ["52"]
+    },
+    {
+      "id": "critical_infra",
+      "label": "Critical Infrastructure",
+      "keywords": ["utility", "power", "grid", "pipeline", "rail", "port", "airport"],
+      "naics_codes": ["22", "48-49"]
+    },
+    {
+      "id": "energy",
+      "label": "Energy",
+      "keywords": ["oil", "gas", "energy", "petroleum", "renewable", "electric"],
+      "naics_codes": ["21", "22"]
+    }
+  ]
+}
