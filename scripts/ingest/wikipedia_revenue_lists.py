@@ -8,6 +8,7 @@ list pages and extracts company, revenue, employees, and headquarters.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import urllib.parse
 from io import StringIO
@@ -191,6 +192,7 @@ DEFAULT_DISCOVER_QUERIES = [
     "largest technology companies by revenue",
     "largest retail companies",
 ]
+DEFAULT_DISCOVER_CACHE = "data/raw/seeds/wikipedia_discovered_pages.json"
 
 US_STATES = {
     "alabama",
@@ -433,6 +435,27 @@ def _discover_pages(queries: List[str], limit: int) -> List[Dict[str, str]]:
     return discovered
 
 
+def _load_cached_pages(path: str) -> List[Dict[str, str]]:
+    cache_path = Path(path)
+    if not cache_path.exists():
+        return []
+    try:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        if isinstance(payload, list):
+            return [p for p in payload if isinstance(p, dict) and p.get("url")]
+    except (OSError, json.JSONDecodeError):
+        return []
+    return []
+
+
+def _save_cached_pages(path: str, pages: List[Dict[str, str]]) -> None:
+    cache_path = Path(path)
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump(pages, f, indent=2)
+
+
 def _fetch_tables(url: str) -> List[pd.DataFrame]:
     resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=60)
     resp.raise_for_status()
@@ -451,15 +474,39 @@ def main() -> int:
         default=[],
         help="Additional discovery query (repeatable)",
     )
+    parser.add_argument(
+        "--discover-cache",
+        default=DEFAULT_DISCOVER_CACHE,
+        help="Path to write discovered pages cache (JSON)",
+    )
+    parser.add_argument(
+        "--use-cache",
+        action="store_true",
+        help="Load cached discovery pages before scraping",
+    )
     args = parser.parse_args()
 
     country_map = _load_country_map()
     rows: List[Dict[str, str]] = []
 
     pages = list(PAGES)
+    if args.use_cache:
+        pages.extend(_load_cached_pages(args.discover_cache))
     if args.discover:
         queries = args.discover_query or DEFAULT_DISCOVER_QUERIES
-        pages.extend(_discover_pages(queries, args.discover_limit))
+        discovered = _discover_pages(queries, args.discover_limit)
+        pages.extend(discovered)
+        if args.discover_cache:
+            _save_cached_pages(args.discover_cache, discovered)
+
+    # Deduplicate by URL
+    deduped = {}
+    for page in pages:
+        url = page.get("url")
+        if not url:
+            continue
+        deduped[url] = page
+    pages = list(deduped.values())
 
     for page in pages:
         try:

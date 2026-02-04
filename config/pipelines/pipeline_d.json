@@ -17,6 +17,7 @@
       {"name": "Wikidata revenue-ranked companies", "type": "open_seed", "status": "scaffold"},
       {"name": "Wikipedia revenue lists", "type": "open_seed", "status": "scaffold"},
       {"name": "SEC company tickers (US)", "type": "open_seed", "status": "scaffold"},
+      {"name": "GLEIF LEI sample", "type": "open_seed", "status": "scaffold"},
       {"name": "Media groups", "type": "sector_seed", "status": "planned"},
       {"name": "Tech platforms", "type": "sector_seed", "status": "planned"},
       {"name": "Telecoms", "type": "sector_seed", "status": "planned"},

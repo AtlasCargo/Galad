@@ -105,6 +105,7 @@ Optional: add Wikipedia revenue lists as an additional seed source:
 ```
 python scripts/ingest/wikipedia_revenue_lists.py --discover --discover-limit 40
 python scripts/ingest/sec_company_tickers.py
+python scripts/ingest/gleif_lei_sample.py --limit 2000
 ```
 
 ## Required raw files (place in `data/raw/`)

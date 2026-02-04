@@ -62,3 +62,9 @@ SEC company tickers (open, US public companies):
 ```
 python scripts/ingest/sec_company_tickers.py
 ```
+
+GLEIF LEI sample (open; global IDs, limited sample):
+
+```
+python scripts/ingest/gleif_lei_sample.py --limit 2000
+```

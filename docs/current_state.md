@@ -13,8 +13,8 @@ Date: 2026-02-04
   - Thresholds: `data/output/robustness_thresholds.json`
   - Scores: `data/output/country_robustness_2020_2026.csv` (1,394 rows, 16 cols)
 - Influence-first pipeline outputs
-  - `data/output/top_actors_influence.csv` (12,612 rows, 10 cols)
-  - `data/output/org_classification_map.csv` (12,612 rows, 6 cols)
+  - `data/output/top_actors_influence.csv` (14,612 rows, 10 cols)
+  - `data/output/org_classification_map.csv` (14,612 rows, 6 cols)
   - `data/output/org_coverage_gaps.csv` (1,746 rows, 4 cols)
 - Templates
   - `data/output/substate_entities_template.csv`
@@ -38,4 +38,5 @@ Date: 2026-02-04
 - Wikidata revenue-ordered list (small; 16 entities)
 - Wikipedia revenue lists (combined; ~697 entities, generated locally)
 - SEC company tickers (US public companies; ~8,049 entities, generated locally)
+- GLEIF LEI sample (global; ~2,000 entities, generated locally)
 - See `data/raw/` for exact files.
