@@ -58,6 +58,7 @@ def main() -> int:
     parser.add_argument("--name-col", default="name")
     parser.add_argument("--entity-id-col", default="entity_id")
     parser.add_argument("--sector-col", default="sector_code")
+    parser.add_argument("--iso-col", default="country_iso3")
     parser.add_argument("--taxonomy", default="config/taxonomy/sectors_naics2.json")
     parser.add_argument("--overlays", default="config/taxonomy/overlays.json")
     args = parser.parse_args()
@@ -82,6 +83,7 @@ def main() -> int:
         fieldnames = [
             "entity_id",
             "name",
+            "iso3",
             "sector_code",
             "sector_label",
             "overlay_tags",
@@ -93,12 +95,14 @@ def main() -> int:
             entity_id = row.get(args.entity_id_col, "").strip()
             name = row.get(args.name_col, "").strip()
             sector_code = row.get(args.sector_col, "").strip()
+            iso3 = row.get(args.iso_col, "").strip().upper()
             label = _sector_label(sector_code, sectors)
             overlays_matched = _match_overlays(name, sector_code, overlay_defs)
             writer.writerow(
                 {
                     "entity_id": entity_id,
                     "name": name,
+                    "iso3": iso3,
                     "sector_code": sector_code,
                     "sector_label": label,
                     "overlay_tags": ",".join(overlays_matched),

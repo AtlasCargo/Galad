@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict
@@ -65,9 +67,18 @@ def main() -> int:
     print(f"Wrote {args.status_out}")
 
     if enabled:
-        raise SystemExit(
-            "Ingestion is not implemented in scaffold mode. Configure sources and implement ingestion steps."
-        )
+        pipeline_id = pipeline.get("id")
+        if pipeline_id == "pipeline_d":
+            script = Path("scripts/ingest/pipeline_d.py")
+            if not script.exists():
+                raise SystemExit(f"Pipeline D ingestion script not found: {script}")
+            result = subprocess.run([sys.executable, str(script)], check=False)
+            if result.returncode != 0:
+                raise SystemExit(result.returncode)
+        else:
+            raise SystemExit(
+                f"Ingestion not implemented for pipeline {pipeline_id}. Configure sources and implement ingestion steps."
+            )
 
     return 0
 

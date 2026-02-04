@@ -37,6 +37,9 @@ OPTIONAL_FILES = (
     "vparty_entities.csv",
     "vparty_party_year.csv",
     "pipeline_status.json",
+    "top_actors_influence.csv",
+    "org_classification_map.csv",
+    "org_coverage_gaps.csv",
 )
 
 
@@ -263,6 +266,39 @@ def _validate_parquet(path: Path, ctx: ValidationContext) -> None:
         ctx.error(f"{path}: parquet file is empty")
 
 
+def _validate_top_actors(path: Path, ctx: ValidationContext) -> None:
+    header, rows = _read_csv_header_and_rows(path)
+    if not header:
+        ctx.error(f"{path}: missing header")
+        return
+    required = ["entity_id", "name", "country_iso3", "entity_type", "influence_score", "rank"]
+    _ensure_required_columns(ctx, path, header, required)
+    if not rows:
+        ctx.error(f"{path}: no data rows found")
+
+
+def _validate_org_classification(path: Path, ctx: ValidationContext) -> None:
+    header, rows = _read_csv_header_and_rows(path)
+    if not header:
+        ctx.error(f"{path}: missing header")
+        return
+    required = ["entity_id", "name", "iso3", "sector_code", "sector_label", "overlay_tags"]
+    _ensure_required_columns(ctx, path, header, required)
+    if not rows:
+        ctx.error(f"{path}: no data rows found")
+
+
+def _validate_coverage_gaps(path: Path, ctx: ValidationContext) -> None:
+    header, rows = _read_csv_header_and_rows(path)
+    if not header:
+        ctx.error(f"{path}: missing header")
+        return
+    required = ["iso3", "overlay", "entity_count", "coverage_flag"]
+    _ensure_required_columns(ctx, path, header, required)
+    if not rows:
+        ctx.error(f"{path}: no data rows found")
+
+
 def _dispatch_validators() -> Dict[str, Callable[[Path, ValidationContext], None]]:
     return {
         "country_2020_2026.csv": _validate_country_csv,
@@ -311,6 +347,9 @@ def _dispatch_validators() -> Dict[str, Callable[[Path, ValidationContext], None
         "robustness_thresholds.json": _validate_robustness_thresholds,
         "pipeline_status.json": _validate_pipeline_status,
         "country_2020_2026.parquet": _validate_parquet,
+        "top_actors_influence.csv": _validate_top_actors,
+        "org_classification_map.csv": _validate_org_classification,
+        "org_coverage_gaps.csv": _validate_coverage_gaps,
     }
 
 
